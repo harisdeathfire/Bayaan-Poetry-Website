@@ -1,108 +1,151 @@
 ﻿@page "/submit-testimonial"
 @inject ITestimonialService TestimonialService
-@inject NavigationManager NavManager
 @layout UserLayout
-@rendermode InteractiveServer
+@using Entities
 @using Microsoft.AspNetCore.Components.Forms
+@rendermode InteractiveServer
 
-<h2 class="text-3xl font-semibold mb-6 text-center">Submit Your Testimonial</h2>
+<h1 class="text-4xl font-semibold text-gray-900 mt-10 mb-6 text-center">
+    Submit Your Testimonial
+</h1>
 
-<EditForm Model="@testimonial" OnValidSubmit="HandleSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Your Name</label>
-        <InputText class="w-full px-4 py-2 border rounded shadow-sm" @bind-Value="testimonial.Author" placeholder="Enter your name" />
+@if (!string.IsNullOrEmpty(statusMessage))
+{
+    <div class="bg-green-100 border border-green-500 text-green-700 px-4 py-2 rounded-md mb-4 max-w-md mx-auto text-center">
+        @statusMessage
     </div>
+}
 
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Title</label>
-        <InputText class="w-full px-4 py-2 border rounded shadow-sm" @bind-Value="testimonial.Title" placeholder="E.g. Happy Customer" />
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="bg-red-100 border border-red-500 text-red-700 px-4 py-2 rounded-md mb-4 max-w-md mx-auto text-center">
+        @errorMessage
     </div>
+}
 
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Your Role</label>
-        <InputText class="w-full px-4 py-2 border rounded shadow-sm" @bind-Value="testimonial.AuthorRole" placeholder="e.g. Developer, Teacher" />
-    </div>
+<div class="form-container max-w-xl mx-auto p-8 bg-white shadow-md rounded-md">
+    <h2 class="text-2xl font-semibold text-center text-gray-900 mb-6">
+        Share Your Experience with Bayaan™
+    </h2>
 
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Country</label>
-        <InputSelect class="w-full px-4 py-2 border rounded shadow-sm" @bind-Value="testimonial.CountryCode">
-            <option value="">Select country</option>
-            <option value="PK">🇵🇰 Pakistan</option>
-            <option value="US">🇺🇸 United States</option>
-            <option value="IN">🇮🇳 India</option>
-            <option value="UK">🇬🇧 United Kingdom</option>
-            <option value="SA">🇸🇦 Saudi Arabia</option>
-            <option value="CA">🇨🇦 Canada</option>
-        </InputSelect>
-    </div>
+    <EditForm Model="@testimonial" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary class="mb-4 text-sm text-red-600" />
 
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Rating</label>
-        <InputSelect class="w-full px-4 py-2 border rounded shadow-sm" @bind-Value="testimonial.Rating">
-            <option value="">Select rating</option>
-            @for (int i = 1; i <= 5; i++)
-            {
-                <option value="@i">@i Star(s)</option>
-            }
-        </InputSelect>
-    </div>
+        <div class="space-y-4">
 
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Upload Your Photo</label>
-        <InputFile OnChange="HandleImageUpload" accept="image/*" class="w-full" />
-    </div>
+            <div>
+                <label class="form-label">Your Name</label>
+                <InputText @bind-Value="testimonial.Author" class="form-input w-full" placeholder="Your Name" />
+            </div>
 
-    @if (!string.IsNullOrEmpty(imagePreview))
-    {
-        <div class="mb-4 text-center">
-            <img src="@imagePreview" alt="Preview" class="w-24 h-24 rounded-full mx-auto shadow-md border border-gray-300" />
+            <div>
+                <label class="form-label">Title</label>
+                <InputText @bind-Value="testimonial.Title" class="form-input w-full" placeholder="Title (e.g., Happy Customer)" />
+            </div>
+
+            <div>
+                <label class="form-label">Your Role</label>
+                <InputText @bind-Value="testimonial.AuthorRole" class="form-input b-full" placeholder="Your Role (e.g., Developer)" />
+            </div>
+
+            <div>
+                <label class="form-label">Country</label>
+                <InputSelect @bind-Value="testimonial.CountryCode" class="form-select w-full">
+                    <option value="">Select Country</option>
+                    <option value="PK">🇵🇰 Pakistan</option>
+                    <option value="US">🇺🇸 United States</option>
+                    <option value="IN">🇮🇳 India</option>
+                    <option value="UK">🇬🇧 United Kingdom</option>
+                    <option value="SA">🇸🇦 Saudi Arabia</option>
+                    <option value="CA">🇨🇦 Canada</option>
+                </InputSelect>
+            </div>
+
+            <div>
+                <label class="form-label">Rating</label>
+                <InputSelect @bind-Value="testimonial.Rating" class="form-select w-full">
+                    <option value="">Select Rating</option>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <option value="@i">@string.Concat(Enumerable.Repeat("⭐", i)) @i Star</option>
+                    }
+                </InputSelect>
+            </div>
+
+            <div>
+                <label class="form-label">Upload Your Photo</label>
+                <InputFile class="file-input w-full" OnChange="HandleImageUpload" accept="image/*" />
+                @if (!string.IsNullOrEmpty(imagePreview))
+                {
+                    <img src="@imagePreview" alt="Preview" class="h-24 w-24 mt-2 rounded-full border-2 border-green-500 object-cover" />
+                }
+            </div>
+
+            <div>
+                <label class="form-label">Your Message</label>
+                <InputTextArea @bind-Value="testimonial.Message" class="form-textarea w-full" placeholder="Write your testimonial here…" rows="4" />
+            </div>
+
+            <button type="submit" class="submit-button bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">
+                ✨ Submit Testimonial
+            </button>
         </div>
-    }
-
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-700">Your Message</label>
-        <InputTextArea class="w-full px-4 py-2 border rounded shadow-sm h-32 resize-none"
-                       @bind-Value="testimonial.Message" placeholder="Write your testimonial..." />
-    </div>
-
-    <button type="submit"
-            class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow-md transition transform hover:-translate-y-1">
-        Submit
-    </button>
-
-    @if (!string.IsNullOrEmpty(statusMessage))
-    {
-        <div class="mt-4 text-center text-green-600 font-medium">
-            @statusMessage
-        </div>
-    }
-</EditForm>
+    </EditForm>
+</div>
 
 @code {
     private TestimonialModel testimonial = new();
-    private string statusMessage = string.Empty;
+    private IBrowserFile uploadedFile;
     private string? imagePreview;
+    private string statusMessage = string.Empty;
+    private string errorMessage = string.Empty;
 
     private async Task HandleImageUpload(InputFileChangeEventArgs e)
     {
-        var file = e.File;
-        if (file != null)
+        uploadedFile = e.File;
+
+        if (uploadedFile != null)
         {
-            var buffer = new byte[file.Size];
-            await file.OpenReadStream(maxAllowedSize: 2 * 1024 * 1024).ReadAsync(buffer); // Max 2MB
-            imagePreview = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
-            testimonial.AuthorImageUrl = imagePreview;
+            using var stream = new MemoryStream();
+            await uploadedFile.OpenReadStream(maxAllowedSize: 2 * 1024 * 1024).CopyToAsync(stream);
+            var bytes = stream.ToArray();
+            imagePreview = $"data:{uploadedFile.ContentType};base64,{Convert.ToBase64String(bytes)}";
         }
     }
 
     private async Task HandleSubmit()
     {
-        await TestimonialService.AddTestimonialAsync(testimonial);
-        statusMessage = "Thank you! Your testimonial has been submitted for admin approval.";
-        testimonial = new();
-        imagePreview = null;
+        try
+        {
+            if (uploadedFile != null)
+            {
+                var fileName = Guid.NewGuid() + Path.GetExtension(uploadedFile.Name);
+                var savePath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "images", "testimonials");
+
+                if (!Directory.Exists(savePath))
+                    Directory.CreateDirectory(savePath);
+
+                var filePath = Path.Combine(savePath, fileName);
+
+                using var fileStream = new FileStream(filePath, FileMode.Create);
+                await uploadedFile.OpenReadStream(maxAllowedSize: 2 * 1024 * 1024).CopyToAsync(fileStream);
+
+                testimonial.AuthorImageUrl = "/images/testimonials/" + fileName;
+            }
+
+            await TestimonialService.AddTestimonialAsync(testimonial);
+            statusMessage = "Thank you! Your testimonial has been submitted for admin approval.";
+            errorMessage = string.Empty;
+
+            testimonial = new();
+            uploadedFile = null;
+            imagePreview = null;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+            statusMessage = string.Empty;
+        }
     }
 }

@@ -23,6 +23,7 @@ wwwroot\images\poetry2.jpg
 wwwroot\images\profiles\95f18cb7-e14c-4010-86ad-fb9227aa9da1.jpg
 wwwroot\images\qawal night.jpg
 wwwroot\images\raed-kasrwani-RDeeIFfDTi8-unsplash.jpg
+wwwroot\images\testimonials\87b9f10c-6868-4959-8daf-c70b4e224f92.jpg
 wwwroot\images\twitter.jpeg
 wwwroot\images\users\0fa7cdb7-9b8a-4543-a223-59b2eba76848.jpg
 wwwroot\images\users\118871c4-034a-4d17-83d1-f860552f92ab.jpg

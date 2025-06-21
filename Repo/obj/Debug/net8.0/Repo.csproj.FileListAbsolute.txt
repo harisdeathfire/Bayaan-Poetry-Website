@@ -87,3 +87,21 @@ C:\Users\haris\Documents\FYP Project (Ammar)\Repo\obj\Debug\net8.0\Repo.dll
 C:\Users\haris\Documents\FYP Project (Ammar)\Repo\obj\Debug\net8.0\refint\Repo.dll
 C:\Users\haris\Documents\FYP Project (Ammar)\Repo\obj\Debug\net8.0\Repo.pdb
 C:\Users\haris\Documents\FYP Project (Ammar)\Repo\obj\Debug\net8.0\ref\Repo.dll
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\Repo.deps.json
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\Repo.dll
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\Repo.pdb
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\DAL.dll
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\Entities.dll
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\DAL.pdb
+C:\Users\haris\Documents\FYP Project\Repo\bin\Debug\net8.0\Entities.pdb
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.csproj.AssemblyReference.cache
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.AssemblyInfoInputs.cache
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.AssemblyInfo.cs
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.csproj.CoreCompileInputs.cache
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.sourcelink.json
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.csproj.Up2Date
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.dll
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\refint\Repo.dll
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\Repo.pdb
+C:\Users\haris\Documents\FYP Project\Repo\obj\Debug\net8.0\ref\Repo.dll

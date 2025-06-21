@@ -1761,11 +1761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haris\\Documents\\FYP Project (Ammar)\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\haris\\Documents\\FYP Project\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\haris\\Documents\\FYP Project (Ammar)\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\haris\\Documents\\FYP Project\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\haris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haris\\Documents\\FYP Project (Ammar)\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\haris\\Documents\\FYP Project\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
