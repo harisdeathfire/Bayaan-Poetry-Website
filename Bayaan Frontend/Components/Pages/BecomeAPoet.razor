@@ -1,0 +1,163 @@
+﻿@page "/becomeapoet"
+@using System.Security.Claims
+@inject IPoetService PoetService
+@inject IUserService UserService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavManager
+@inject IJSRuntime JS
+@rendermode InteractiveServer
+@layout UserLayout
+
+<h1 class="text-4xl font-semibold text-gray-900 mt-10 mb-6 text-center">
+    Become a Poet
+</h1>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="bg-red-100 border border-red-500 text-red-700 px-4 py-2 rounded-md mb-4 max-w-md mx-auto">
+        @errorMessage
+    </div>
+}
+
+@if (isAdmin)
+{
+    <div class="bg-yellow-100 border border-yellow-500 text-yellow-700 px-4 py-2 rounded-md mb-4 max-w-md mx-auto">
+        You are an admin. You cannot become a poet.
+    </div>
+}
+else
+{
+    <EditForm Model="@poetModel" OnValidSubmit="@SavePoet">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md max-w-md w-full transform transition duration-500 hover:shadow-2xl hover:bg-gray-100 hover:translate-y-1 px-8 py-10 mx-auto">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Share Your Talent</h2>
+
+            <div class="mb-4">
+                <label for="nickname" class="block font-semibold text-gray-700">Nickname</label>
+                <InputText id="nickname" @bind-Value="poetModel.NickName"
+                           class="w-full p-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300" />
+                <ValidationMessage For="@(() => poetModel.NickName)" />
+            </div>
+
+            <div class="mb-4">
+                <label for="poetrystyle" class="block font-semibold text-gray-700">Poetry Style</label>
+                <InputText id="poetrystyle" @bind-Value="poetModel.PoetryStyle"
+                           class="w-full p-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300" />
+                <ValidationMessage For="@(() => poetModel.PoetryStyle)" />
+            </div>
+
+            <div class="mb-4">
+                <label for="biography" class="block font-semibold text-gray-700">Biography</label>
+                <InputTextArea id="biography" @bind-Value="poetModel.Biography"
+                               class="w-full p-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300"
+                               rows="5" />
+                <ValidationMessage For="@(() => poetModel.Biography)" />
+            </div>
+
+            <button disabled="@isSubmitting"
+                    class="w-full py-2 px-4 rounded-md font-semibold text-gray-50 bg-green-600 hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition duration-500 transform hover:translate-y-1">
+                Become a Poet
+            </button>
+        </div>
+    </EditForm>
+}
+
+@code {
+    private bool isSubmitting = false;
+    private bool isAdmin = false;
+    private string errorMessage = string.Empty;
+
+    private PoetModel poetModel = new PoetModel();
+    private ClaimsPrincipal? _currentUser;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        _currentUser = authState.User;
+
+        if (_currentUser == null || !_currentUser.Identity.IsAuthenticated)
+        {
+            NavManager.NavigateTo("/logingoogle");
+            return;
+        }
+
+        if (_currentUser.IsInRole("Admin"))
+        {
+            isAdmin = true;
+            return;
+        }
+
+        var email = _currentUser.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            errorMessage = "Unable to identify your account.";
+            return;
+        }
+
+        var profile = await UserService.GetProfileByEmail(email);
+        if (profile == null)
+        {
+            errorMessage = "Profile not found. Please make sure you are registered first.";
+            return;
+        }
+
+        var existingPoet = await PoetService.GetPoetByEmailAsync(email);
+        if (existingPoet != null)
+        {
+            errorMessage = "You are already a Poet.";
+            NavManager.NavigateTo("/userProfilePage");
+            return;
+        }
+    }
+
+    private async Task SavePoet()
+    {
+        isSubmitting = true;
+
+        try
+        {
+            var email = _currentUser.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+            {
+                errorMessage = "Unable to identify your account.";
+                return;
+            }
+
+            var profile = await UserService.GetProfileByEmail(email);
+            if (profile == null)
+            {
+                errorMessage = "Profile not found.";
+                return;
+            }
+
+            var existingPoet = await PoetService.GetPoetByEmailAsync(email);
+            if (existingPoet != null)
+            {
+                errorMessage = "You are already a Poet.";
+                return;
+            }
+
+            poetModel.UId = profile.UId;
+            poetModel.BecamePoetAt = DateTime.UtcNow;
+            poetModel.IsApproved = false;
+
+            await PoetService.InsertPoetAsync(poetModel);
+            await PoetService.UpdateUserRoleToPoetAsync(poetModel.UId);
+
+            await JS.InvokeVoidAsync("alert", "🎉 You are now a Poet!\nPlease login again to move to the Poet Dashboard.");
+            NavManager.NavigateTo("/logingoogle", forceLoad: true);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to become a Poet: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+﻿@page "/home"
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+@layout UserLayout
+<PageTitle>Home</PageTitle>
+
+
+<AuthorizeView Roles="Admin">
+   <AdminDashboard/>
+</AuthorizeView>
+
+<AuthorizeView Roles="Poet">
+   <PoetDashboard/>
+</AuthorizeView>
+
+<AuthorizeView Roles="User">
+    <UserDashboard />
+</AuthorizeView>
+
+
+
+@code {
+
+    private void GoToProfile()
+    {
+        NavManager.NavigateTo("/userProfilePage");
+    }
+
+    private void GoToAdditionalInfo()
+    {
+        NavManager.NavigateTo("/saveAdditionalInfo");
+    }
+
+    private void Login()
+    {
+        NavManager.NavigateTo("logingoogle", forceLoad: true);
+    }
+
+    private void Logout()
+    {
+        NavManager.NavigateTo("logout", true);
+    }
+    private void GoToUsers()
+    {
+        NavManager.NavigateTo("user-admin");
+    }
+  
+}
+

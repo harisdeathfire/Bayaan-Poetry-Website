@@ -1,0 +1,146 @@
+﻿@page "/ghazal/{GhazalId}"
+@using System.Web
+@using Newtonsoft.Json
+@using Repo.IServices
+@inject IGhazalService GhazalService
+@inject IPoetService PoetService
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@layout UserLayout
+@rendermode InteractiveServer
+@using Newtonsoft
+
+<div class="container mt-4 text-center">
+    @if (loadFailed)
+    {
+        <div class="alert alert-warning mt-4">📛 Ghazal not found or could not be loaded.</div>
+    }
+    else if (ghazal == null)
+    {
+        <div class="text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (showModal)
+    {
+        <div class="modal-backdrop fade show" style="z-index: 1040;"></div>
+
+        <div class="modal fade show d-block custom-modal" tabindex="-1" style="z-index: 1050;" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content shadow-lg border-0">
+                    <div class="modal-header bg-black text-black">
+                        <h5 class="modal-title fw-semibold" dir="rtl">@ghazal.Title</h5>
+                        <button type="button" class="btn-close" aria-label="Close" @onclick="CloseAndGoBackAsync"></button>
+                    </div>
+
+                    <div class="modal-body" dir="rtl">
+                        @if (couplets?.Count > 0)
+                        {
+                            @foreach (var couplet in couplets)
+                            {
+                                <blockquote class="blockquote ps-3 mb-4">
+                                    <p class="mb-1 urdu-line"><i>@couplet.Line1</i></p>
+                                    <p class="mb-1 urdu-line"><i>@couplet.Line2</i></p>
+                                </blockquote>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-muted">No couplets found.</p>
+                        }
+                    </div>
+
+                    <div class="modal-footer bg-light justify-content-end">
+                        <button class="btn btn-secondary" @onclick="CloseAndGoBackAsync">
+                            <i class="bi bi-arrow-left me-1"></i> Back
+                        </button>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(statusMessage))
+                    {
+                        <div class="alert @((statusMessage.Contains("Error") ? "alert-danger" : "alert-success")) m-3">
+                            @statusMessage
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string GhazalId { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "returnUrl")]
+    public string ReturnUrl { get; set; } = "/view-poets"; // fallback
+
+    private GhazalModel ghazal;
+    private List<CoupletsModel> couplets;
+    private bool showModal = false;
+    private bool loadFailed = false;
+    private bool isPoet = false;
+    private string statusMessage = "";
+    private string currentUserPoetId = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
+                var role = user.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
+                isPoet = role == "Poet";
+
+                if (isPoet && !string.IsNullOrWhiteSpace(email))
+                {
+                    currentUserPoetId = await PoetService.GetPoetIdByEmail(email);
+                }
+            }
+
+            ghazal = await GhazalService.GetGhazalById(GhazalId);
+
+            if (ghazal == null || string.IsNullOrWhiteSpace(ghazal.GhazalJson))
+            {
+                loadFailed = true;
+                return;
+            }
+
+            var ghazalJson = JsonConvert.DeserializeObject<GhazalJSONModel>(ghazal.GhazalJson);
+            couplets = ghazalJson?.Couplets;
+            showModal = true;
+        }
+        catch
+        {
+            loadFailed = true;
+        }
+    }
+
+    private async Task CloseAndGoBackAsync()
+    {
+        showModal = false;
+        StateHasChanged();
+        await Task.Delay(200);
+
+        if (!string.IsNullOrEmpty(ReturnUrl))
+        {
+            Nav.NavigateTo(ReturnUrl, forceLoad: true);
+        }
+        else if (isPoet && ghazal?.PoetId == currentUserPoetId)
+        {
+            Nav.NavigateTo("/my-ghazals", forceLoad: true);
+        }
+        else
+        {
+            Nav.NavigateTo("/view-poets", forceLoad: true);
+        }
+    }
+
+}

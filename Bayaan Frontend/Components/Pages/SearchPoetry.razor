@@ -1,0 +1,84 @@
+﻿@page "/search-poetry"
+@using Repo.IServices
+@inject IGhazalService GhazalService
+@inject NavigationManager Nav
+@rendermode InteractiveServer
+@layout UserLayout
+
+<div class="poetry-search-container">
+    <!-- Search Header -->
+    <div class="search-header">
+        <h2 class="search-title">Search Poetry by Poet Nickname</h2>
+        <p class="search-subtitle">Discover beautiful verses from talented poets across Pakistan</p>
+    </div>
+
+
+    <!-- Results Container -->
+    <div class="results-container">
+        @if (!string.IsNullOrWhiteSpace(Nickname) && ghazals is not null)
+        {
+            @if (ghazals.Any())
+            {
+                @foreach (var ghazal in ghazals)
+                {
+                    <div class="poetry-card">
+                        <div class="poet-info">
+                            <img src="@(!string.IsNullOrWhiteSpace(ghazal.ProfileImageUrl) ? ghazal.ProfileImageUrl : "/images/default-profile.png")"
+                                 alt="Profile"
+                                 class="poet-avatar" />
+                            <div class="poet-details">
+                                <h4>@ghazal.PoetNickname</h4>
+                                <p class="poet-style">@ghazal.PoetryStyle</p>
+                                <p class="poet-bio">@ghazal.Biography</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <h5 class="ghazal-title">@ghazal.Title</h5>
+                        <button class="view-button" @onclick="() => ViewGhazal(ghazal.GhazalId)">
+                            View Ghazal
+                        </button>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="no-results">
+                    No ghazals found for '@Nickname'.
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "nickname")]
+    public string? Nickname { get; set; }
+    [Parameter] public string GhazalId { get; set; }
+
+    private string searchNickname = string.Empty;
+    private List<GhazalModel> ghazals = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(Nickname))
+        {
+            searchNickname = Nickname;
+            ghazals = await GhazalService.GetGhazalsByNicknameAsync(Nickname);
+        }
+    }
+
+    private void SearchPoetryByNickname()
+    {
+        if (!string.IsNullOrWhiteSpace(searchNickname))
+        {
+            Nav.NavigateTo($"/search-poetry?nickname={Uri.EscapeDataString(searchNickname)}", forceLoad: true);
+        }
+    }
+
+    private void ViewGhazal(string ghazalId)
+    {
+        Nav.NavigateTo($"/ghazal/{ghazalId}?returnUrl={Uri.EscapeDataString(Nav.Uri)}");
+    }
+
+}

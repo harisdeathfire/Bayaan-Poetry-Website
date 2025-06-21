@@ -1,0 +1,78 @@
+﻿@page "/admin/approve-poets"
+@inject IPoetService PoetService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager Nav
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Entities
+@attribute [Authorize(Roles = "Admin")]
+@rendermode InteractiveServer
+
+<h3 class="text-center my-4">Pending Poet Approvals</h3>
+
+@if (!isAuthorized)
+{
+    <div class="alert alert-danger text-center">Access Denied. You are not authorized to view this page.</div>
+}
+else if (poets == null)
+{
+    <div class="text-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (poets.Count == 0)
+{
+    <div class="alert alert-info text-center">No poets pending approval.</div>
+}
+else
+{
+    <div class="bayaan-poet-card-container">
+        @foreach (var poet in poets)
+        {
+            <div class="bayaan-poet-card">
+                <img src="@(!string.IsNullOrEmpty(poet.ProfileImageUrl) ? poet.ProfileImageUrl : "/images/default-profile.png")"
+                     alt="Profile Image"
+                     class="bayaan-profile-img" />
+
+                <h3 class="bayaan-nickname">@poet.NickName</h3>
+                <p class="bayaan-style">Style: <em>@poet.PoetryStyle</em></p>
+                <p class="bayaan-bio">@poet.Biography</p>
+                <p class="bayaan-date">
+                    <strong>Requested:</strong> @(poet.BecamePoetAt?.ToString("dd MMM yyyy") ?? "Unknown")
+                </p>
+
+                <div class="bayaan-actions">
+                    <button class="bayaan-approve-btn" @onclick="@(() => ApprovePoet(poet.Email))">
+                        Approve
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<PoetModel> poets;
+    private bool isAuthorized = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated && user.IsInRole("Admin"))
+        {
+            isAuthorized = true;
+            poets = await PoetService.GetUnapprovedPoetsAsync();
+        }
+    }
+
+    private async Task ApprovePoet(string email)
+    {
+        await PoetService.ApprovePoetAsync(email);
+        poets = poets.Where(p => p.Email != email).ToList();
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,129 @@
+﻿@page "/my-ghazals"
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authorization
+@using Repo.IServices
+@inject IGhazalService GhazalService
+@inject IPoetService PoetService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavManager
+@layout UserLayout
+@rendermode InteractiveServer
+@attribute [Authorize(Roles = "Poet")]
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+<h2 class="page-title">📜 My Ghazals</h2>
+
+<button class="btn btn-secondary mb-4 back-to-dashboard-button" @onclick="BackToDashboard">
+    <i class="fas fa-arrow-left me-2"></i> Back to Dashboard
+</button>
+
+@if (isNotPoet)
+{
+    <div class="alert danger mt-3">
+        <i class="fas fa-ban me-2"></i> You do not have access to view this page.
+    </div>
+}
+else if (ghazals == null)
+{
+    <div class="loading mt-4">
+        <svg aria-hidden="true" class="spinner me-2" viewBox="0 0 100 100">
+            <circle fill="none" stroke="#fff9cc" stroke-width="12" r="40" cy="50" cx="50"></circle>
+            <path fill="#d4af37" d="M50 10a40 40 0 0 1 40 40h-12a28 28 0 0 0-28-28V10z"></path>
+        </svg>
+        Loading...
+    </div>
+}
+else if (ghazals.Count == 0)
+{
+    <div class="alert warning mt-3">
+        <i class="fas fa-info-circle me-2"></i> No Ghazals found.
+    </div>
+}
+else
+{
+    <div class="ghazal-grid">
+        @foreach (var ghazal in ghazals)
+        {
+            <div class="ghazal-item">
+                <h5>@ghazal.Title</h5>
+                <p>Created at: @ghazal.CreatedAt.ToString("dd MMM yyyy")</p>
+
+                <div class="ghazal-actions d-flex gap-2 mt-2">
+                    <button class="ghazal-button" @onclick="@(() => ViewGhazal(ghazal.GhazalId))">
+                       View
+                    </button>
+
+                    <button class="delete-button btn btn-danger" @onclick="@(() => DeleteGhazalAsync(ghazal.GhazalId))">
+                        <i class="fas fa-trash-alt me-1"></i> Delete
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(statusMessage))
+{
+    <div class="alert success mt-4">
+        <i class="fas fa-check-circle me-2"></i> @statusMessage
+    </div>
+}
+
+
+
+@code {
+    private List<GhazalModel> ghazals = new();
+    private bool isNotPoet = true;
+    private string statusMessage = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var role = user.FindFirst(ClaimTypes.Role)?.Value;
+            if (role == "Poet")
+            {
+                isNotPoet = false;
+
+                var email = user.FindFirst(ClaimTypes.Email)?.Value;
+                if (!string.IsNullOrWhiteSpace(email))
+                {
+                    ghazals = await GhazalService.GetGhazalsByEmailAsync(email) ?? new List<GhazalModel>();
+                }
+            }
+        }
+    }
+
+    private void ViewGhazal(string ghazalId)
+    {
+        NavManager.NavigateTo($"/ghazal/{ghazalId}");
+    }
+
+    private void BackToDashboard()
+    {
+        NavManager.NavigateTo("/home");
+    }
+
+    private async Task DeleteGhazalAsync(string ghazalId)
+    {
+        var success = await GhazalService.DeleteGhazal(ghazalId);
+        if (success)
+        {
+            ghazals = ghazals.Where(g => g.GhazalId != ghazalId).ToList();
+            statusMessage = "Ghazal deleted successfully!";
+            StateHasChanged();
+            await Task.Delay(1500); // Optional: give time for message to show
+        }
+        else
+        {
+            statusMessage = "Ghazal Deleted Successfully";
+            StateHasChanged();
+        }
+    }
+}

@@ -1,0 +1,200 @@
+﻿@page "/saveAdditionalInfo"
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IUserService UserService
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+@layout UserLayout
+
+<div class="flex items-center justify-center mt-10">
+    <h3 class="text-3xl font-semibold mb-6 custom-heading text-green-700 bg-green-100 p-4 rounded-md shadow-md border border-green-300">
+        Save Additional Info
+    </h3>
+</div>
+
+@if (!isLoaded)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="flex items-center justify-center min-h-screen px-4">
+        <EditForm Model="@profile" OnValidSubmit="@SaveProfile" class="bg-gray-50 p-6 rounded-lg shadow-md max-w-md w-full custom-form">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="mb-4 text-red-500 custom-validation-summary" />
+
+            <div class="mb-4">
+                <label for="Email" class="block font-semibold mb-1 custom-label">Email</label>
+                <InputText id="Email" @bind-Value="profile.Email" disabled class="w-full p-2 border border-gray-300 rounded-md disabled:bg-gray-100 disabled:text-gray-500 custom-input" />
+            </div>
+
+            <div class="mb-4">
+                <label for="FirstName" class="block font-semibold mb-1 custom-label">First Name</label>
+                <InputText id="FirstName" @bind-Value="profile.FirstName" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.FirstName)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="LastName" class="block font-semibold mb-1 custom-label">Last Name</label>
+                <InputText id="LastName" @bind-Value="profile.LastName" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.LastName)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="NickName" class="block font-semibold mb-1 custom-label">Nick Name</label>
+                <InputText id="NickName" @bind-Value="profile.NickName" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.NickName)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="DOB" class="block font-semibold mb-1 custom-label">Date of Birth</label>
+                <InputDate id="DOB" @bind-Value="profile.DOB" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.DOB)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="PhoneNo" class="block font-semibold mb-1 custom-label">Phone Number</label>
+                <InputText id="PhoneNo" @bind-Value="profile.PhoneNo" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.PhoneNo)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="City" class="block font-semibold mb-1 custom-label">City</label>
+                <InputText id="City" @bind-Value="profile.City" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.City)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="Country" class="block font-semibold mb-1 custom-label">Country</label>
+                <InputText id="Country" @bind-Value="profile.Country" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <ValidationMessage For="@(() => profile.Country)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <div class="mb-4">
+                <label for="UserLocation" class="block font-semibold mb-1 custom-label">User Location</label>
+                <InputText id="UserLocation" @bind-Value="profile.UserLocation" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+            </div>
+
+            <div class="mb-4">
+                <label for="ProfileImage" class="block font-semibold mb-1 custom-label">Profile Image</label>
+                <InputFile id="ProfileImage" OnChange="@OnProfilePictureChange" class="w-full p-2 border border-gray-300 rounded-md custom-input" />
+                <img src="@currentProfilePictureSource" alt="Profile Picture" width="100" class="rounded-md mt-2 border border-gray-400 shadow-md custom-profile-img" />
+            </div>
+
+            <div class="mb-4">
+                <label for="ShortDescription" class="block font-semibold mb-1 custom-label">Short Description</label>
+                <InputTextArea id="ShortDescription" @bind-Value="profile.ShortDescription" class="w-full p-2 border border-gray-300 rounded-md custom-textarea" />
+                <ValidationMessage For="@(() => profile.ShortDescription)" class="text-red-500 text-sm mt-1" />
+            </div>
+
+            <button type="submit" class="bg-success-500 hover:bg-blue-600 text-gray-50 font-semibold py-2 px-4 rounded-md transform hover:translate-y-0.5 custom-button">
+                Save
+            </button>
+        </EditForm>
+
+        @if (isSaveSuccess)
+        {
+            <div class="bg-green-100 text-green-900 p-4 rounded-md mt-3 custom-message">
+                @message
+            </div>
+        }
+        else if (!string.IsNullOrEmpty(message))
+        {
+            <div class="bg-red-100 text-red-900 p-4 rounded-md mt-3 custom-message">
+                @message
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private UserModel profile = new UserModel();
+    private bool isLoaded = false;
+    private bool isSaveSuccess = false;
+    private string message;
+    private byte[] profilePicture;
+    private string currentProfilePictureSource = "/images/default-profile.jpg";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var email = user.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (!string.IsNullOrEmpty(email))
+            {
+                profile = await UserService.GetProfileByEmail(email) ?? new UserModel { Email = email, UId = GenerateId(8) };
+
+                if (!string.IsNullOrEmpty(profile.ProfileImageUrl))
+                {
+                    currentProfilePictureSource = profile.ProfileImageUrl;
+                }
+
+                isLoaded = true;
+            }
+        }
+        else
+        {
+            message = "User is not authenticated.";
+        }
+    }
+
+    private async Task SaveProfile()
+    {
+        try
+        {
+            if (profilePicture != null)
+            {
+                var fileName = Guid.NewGuid() + ".jpg";
+                var directory = Path.Combine("wwwroot", "images", "users");
+                if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
+
+                var filePath = Path.Combine(directory, fileName);
+                await File.WriteAllBytesAsync(filePath, profilePicture);
+                profile.ProfileImageUrl = "/images/users/" + fileName;
+            }
+
+            var existing = await UserService.GetProfileByEmail(profile.Email);
+            if (existing == null)
+            {
+                await UserService.CreateProfile(profile);
+                message = "Profile successfully created.";
+            }
+            else
+            {
+                await UserService.Update(profile);
+                message = "Profile successfully updated.";
+            }
+
+            isSaveSuccess = true;
+            NavManager.NavigateTo("/userProfilePage");
+        }
+        catch (Exception ex)
+        {
+            isSaveSuccess = false;
+            message = $"Error while saving profile: {ex.Message}.";
+        }
+    }
+
+    private async Task OnProfilePictureChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file == null) return;
+
+        using var stream = new MemoryStream();
+        await file.OpenReadStream().CopyToAsync(stream);
+        profilePicture = stream.ToArray();
+        var base64 = Convert.ToBase64String(profilePicture);
+        currentProfilePictureSource = $"data:image/jpeg;base64,{base64}";
+    }
+
+    private string GenerateId(int length)
+    {
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var random = new Random();
+        return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
+    }
+}

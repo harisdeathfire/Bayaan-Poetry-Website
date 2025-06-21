@@ -1,0 +1,29 @@
+﻿@page "/userform"
+@inject NavigationManager NavManager
+@layout UserLayout
+@rendermode InteractiveServer
+
+<div class="profile-setup-page-container">
+    <h2 class="profile-setup-title">Profile Setup Required</h2>
+
+    <div class="profile-setup-container">
+        <p class="profile-setup-message">
+            You tried to access your profile without completing the required information first.
+            <br /><br />
+            Please fill out the user form before accessing your profile.
+        </p>
+
+        <div class="profile-setup-button-container">
+            <button class="profile-setup-button" @onclick="GoToForm">
+                Go to User Form
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void GoToForm()
+    {
+        NavManager.NavigateTo("/saveAdditionalInfo");
+    }
+}

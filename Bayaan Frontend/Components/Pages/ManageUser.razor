@@ -1,0 +1,96 @@
+﻿@page "/user-admin"
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Admin")]
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+
+<h2 class="text-3xl font-bold text-center mb-6">User Profiles</h2>
+
+<hr class="my-6" />
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        @if (users == null)
+        {
+            <p>Loading...</p>
+        }
+        else if (users.Count == 0)
+        {
+            <p>No users found.</p>
+        }
+        else
+        {
+            <div class="profiles-grid">
+                @foreach (var user in users)
+                {
+                    <div class="profile-card">
+                        <img src="@user.ProfileImageUrl" class="profile-img" alt="Profile Image" />
+                        <div class="profile-content">
+                            <h3>@user.FirstName @user.LastName (@user.NickName)</h3>
+                            <p><strong>Email:</strong> @user.Email</p>
+                            <p><strong>DOB:</strong> @user.DOB?.ToShortDateString() </p>
+                            <p><strong>Phone:</strong> @user.PhoneNo</p>
+                            <p><strong>City:</strong> @user.City</p>
+                            <p><strong>Country:</strong> @user.Country</p>
+                            <p><strong>Location:</strong> @user.UserLocation</p>
+                            <p><strong>Description:</strong> @user.ShortDescription</p>
+                            <p><strong>IsActive:</strong> @(user.IsActive ? "Yes" : "No")</p>
+                            <button class="delete-btn" @onclick="() => ConfirmDelete(user.UId)">Delete</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </Authorized>
+
+    <NotAuthorized>
+        <p>You do not have permission to view this page.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private List<UserModel>? users;
+    private UserModel newUser = new UserModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserService.GetProfiles();
+    }
+
+    private async Task ConfirmDelete(string id)
+    {
+        var confirmed = await JSRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to delete user {id}? This will delete all their data.");
+        if (confirmed)
+        {
+            await DeleteProfile(id);
+        }
+    }
+
+    private async Task DeleteProfile(string id)
+    {
+        var result = await UserService.DeleteUserProfileAsync(id);
+        if (result)
+        {
+            users = await UserService.GetProfiles();
+        }
+        else
+        {
+            // Optionally show error
+            Console.WriteLine("Failed to delete user.");
+        }
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        var filePath = Path.Combine("wwwroot", "images", file.Name);
+        Directory.CreateDirectory(Path.Combine("wwwroot", "images"));
+        using (var fileStream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.OpenReadStream().CopyToAsync(fileStream);
+        }
+        newUser.ProfileImageUrl = $"/images/{file.Name}";
+    }
+}

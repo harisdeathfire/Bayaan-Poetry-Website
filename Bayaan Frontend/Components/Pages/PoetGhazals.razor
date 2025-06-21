@@ -1,0 +1,108 @@
+﻿@page "/poet-ghazals"
+@using Repo.IServices
+@inject IGhazalService GhazalService
+@inject IPoetService PoetService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
+@layout UserLayout
+@inject NavigationManager NavManager
+
+<h2 class="page-title">📜 My Ghazals</h2>
+
+<button class="btn btn-secondary mb-4 back-to-dashboard-button" @onclick="BackToDashboard">
+    Back to Dashboard
+</button>
+
+@if (isNotPoet)
+{
+    <div class="alert danger">
+        You do not have access to view this page.
+    </div>
+}
+else if (ghazals == null)
+{
+    <div class="loading">
+        <svg aria-hidden="true" class="spinner mr-2" viewBox="0 0 100 100">
+            <circle fill="none" stroke="#fff9cc" stroke-width="12" r="40" cy="50" cx="50"></circle>
+            <path fill="#d4af37" d="M50 10a40 40 0 0 1 40 40h-12a28 28 0 0 0-28-28V10z"></path>
+        </svg>
+        Loading...
+    </div>
+}
+else if (ghazals.Count == 0)
+{
+    <div class="alert warning">
+        No Ghazals found.
+    </div>
+}
+else
+{
+    <div class="ghazal-grid">
+        @foreach (var ghazal in ghazals)
+        {
+            <div class="ghazal-item">
+                <h5>@ghazal.Title</h5>
+                <p>Created at: @ghazal.CreatedAt.ToString("dd MMM yyyy")</p>
+                <button class="ghazal-button" @onclick="@(() => ViewGhazal(ghazal.GhazalId))">
+                    View Ghazal
+                </button>
+            </div>
+        }
+        <hr />
+        <button class="rekhta-view-btn" @onclick="ViewAllPoetPoetry">
+            📖 View All My Poetry Page
+        </button>
+    </div>
+}
+
+@code {
+    private List<GhazalModel> ghazals;
+    private bool isNotPoet = true;
+    private PoetModel poet;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var role = user.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
+
+            if (role == "Poet")
+            {
+                isNotPoet = false;
+
+                var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
+
+                if (!string.IsNullOrEmpty(email))
+                {
+                    poet = await PoetService.GetPoetByEmailAsync(email);
+                    ghazals = await GhazalService.GetGhazalsByEmailAsync(email);
+                }
+                else
+                {
+                    ghazals = new List<GhazalModel>();
+                }
+            }
+        }
+    }
+
+    private void ViewGhazal(string ghazalId)
+    {
+        NavManager.NavigateTo($"/ghazal/{ghazalId}");
+    }
+
+    private void ViewAllPoetPoetry()
+    {
+        if (!string.IsNullOrEmpty(poet?.Email))
+        {
+            NavManager.NavigateTo($"/poet-ghazals/{poet.Email}");
+        }
+    }
+
+    private void BackToDashboard()
+    {
+        NavManager.NavigateTo("/");
+    }
+}

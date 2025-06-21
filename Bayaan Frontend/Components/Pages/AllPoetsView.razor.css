@@ -1,0 +1,348 @@
+﻿/* Bayaan Poets Page - Aesthetic CSS with White & Dark Forest Green Theme */
+
+/* Main heading styling */
+.bayaan-heading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #1e3a2b;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+    .bayaan-heading::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #2d5a3d, transparent);
+    }
+
+/* Loading and warning states */
+.bayaan-loading,
+.bayaan-warning {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    color: #2d5a3d;
+    background: rgba(46, 90, 61, 0.05);
+    border: 1px solid rgba(46, 90, 61, 0.1);
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.bayaan-warning {
+    color: #8b4513;
+    background: rgba(139, 69, 19, 0.05);
+    border-color: rgba(139, 69, 19, 0.1);
+}
+
+/* Poet grid layout */
+.bayaan-poet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Poet card styling */
+.bayaan-poet-card {
+    background: #ffffff;
+    border: 1px solid rgba(46, 90, 61, 0.15);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(46, 90, 61, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .bayaan-poet-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #2d5a3d, #3d7050, #2d5a3d);
+    }
+
+    .bayaan-poet-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(46, 90, 61, 0.15);
+        border-color: rgba(46, 90, 61, 0.25);
+    }
+
+/* Profile image styling */
+.bayaan-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2d5a3d;
+    margin: 0 auto 1rem auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.bayaan-poet-card:hover .bayaan-profile-img {
+    transform: scale(1.05);
+}
+
+/* Poet name styling */
+.bayaan-nickname {
+    font-family: 'Georgia', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e3a2b;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.5px;
+}
+
+/* Poetry style styling */
+.bayaan-style {
+    text-align: center;
+    color: #2d5a3d;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    font-family: 'Georgia', serif;
+}
+
+    .bayaan-style em {
+        font-style: italic;
+        color: #3d7050;
+        font-weight: 500;
+    }
+
+/* Biography styling */
+.bayaan-bio {
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Georgia', serif;
+    max-height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .bayaan-bio::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 20px;
+        background: linear-gradient(to right, transparent, #ffffff);
+    }
+
+/* Date styling */
+.bayaan-date {
+    color: #2d5a3d;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Georgia', serif;
+}
+
+    .bayaan-date strong {
+        color: #1e3a2b;
+    }
+
+/* View Poetry button */
+.bayaan-view-btn {
+    background: linear-gradient(135deg, #2d5a3d, #3d7050);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: 1rem 0;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .bayaan-view-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .bayaan-view-btn:hover::before {
+        left: 100%;
+    }
+
+    .bayaan-view-btn:hover {
+        background: linear-gradient(135deg, #1e3a2b, #2d5a3d);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(46, 90, 61, 0.3);
+    }
+
+    .bayaan-view-btn:active {
+        transform: translateY(0);
+    }
+
+/* Ghazal list container */
+.bayaan-ghazal-list {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(46, 90, 61, 0.1);
+    background: rgba(46, 90, 61, 0.02);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem -0.5rem 0 -0.5rem;
+}
+
+/* Individual ghazal item */
+.bayaan-ghazal-item {
+    background: #ffffff;
+    border: 1px solid rgba(46, 90, 61, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.75rem 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+    .bayaan-ghazal-item:hover {
+        background: rgba(46, 90, 61, 0.02);
+        border-color: rgba(46, 90, 61, 0.2);
+        transform: translateX(5px);
+    }
+
+    .bayaan-ghazal-item h5 {
+        color: #1e3a2b;
+        font-family: 'Georgia', serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: 0.3px;
+    }
+
+/* Ghazal date */
+.bayaan-ghazal-date {
+    color: #2d5a3d;
+    font-size: 0.8rem;
+    font-family: 'Georgia', serif;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+/* View Ghazal button */
+.bayaan-ghazal-btn {
+    background: transparent;
+    color: #2d5a3d;
+    border: 2px solid #2d5a3d;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.75rem;
+}
+
+    .bayaan-ghazal-btn:hover {
+        background: #2d5a3d;
+        color: white;
+        transform: scale(1.05);
+    }
+
+/* Muted text */
+.bayaan-muted {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bayaan-poet-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .bayaan-heading {
+        font-size: 2rem;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .bayaan-poet-card {
+        padding: 1.25rem;
+    }
+
+    .bayaan-profile-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .bayaan-nickname {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bayaan-heading {
+        font-size: 1.75rem;
+    }
+
+    .bayaan-poet-card {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .bayaan-ghazal-list {
+        margin: 1rem -0.25rem 0 -0.25rem;
+        padding: 1rem;
+    }
+}
+
+/* Animation for loading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bayaan-poet-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+    .bayaan-poet-card:nth-child(even) {
+        animation-delay: 0.1s;
+    }
+
+    .bayaan-poet-card:nth-child(odd) {
+        animation-delay: 0.2s;
+    }

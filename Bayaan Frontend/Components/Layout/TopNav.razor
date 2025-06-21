@@ -1,0 +1,223 @@
+﻿@inject NavigationManager NavManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IPoetService PoetService
+@inject IGoogleUserLoginService GoogleUserLoginService
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Web
+@rendermode InteractiveServer
+@inject NavigationManager Nav
+
+<nav class="custom-navbar navbar navbar-expand-lg px-4 py-3 shadow-sm">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-3 text-success me-4" href="/">
+            <i class="fas fa-feather-alt me-2"></i> BAYAAN
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row gap-4">
+            <li class="nav-item">
+                <a class="nav-link custom-link" href="/view-poets">
+                    <i class="fas fa-user-pen me-1"></i> Poets
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custom-link" href="/about">
+                    <i class="fas fa-users me-1"></i> About Us
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custom-link" href="/blog">
+                    <i class="fas fa-blog me-1"></i> Blog
+                </a>
+            </li>
+        </ul>
+
+        <div class="d-flex align-items-center w-50 px-3">
+            <input type="text"
+                   class="form-control search-input rounded-pill shadow-sm me-2"
+                   placeholder="Search poetry, poets…"
+                   @bind="searchNickname"
+                   @bind:event="oninput" />
+
+            <button type="button"
+                    class="btn btn-outline-success rounded-pill shadow-sm"
+                    @onclick="SearchPoetryByNickname">
+                <i class="fas fa-search me-1"></i> Search
+            </button>
+        </div>
+
+
+
+        <!-- Right Side User Actions -->
+        <div class="d-flex align-items-center gap-3 ms-3">
+            @if (isAuthenticated && userRole != "Admin")
+            {
+                <button class="become-poet-button" @onclick="BecomePoet">
+                    <i class="fas fa-microphone-lines me-2"></i> Become a Poet
+                </button>
+            }
+
+            @if (isAuthenticated)
+            {
+                <div class="dropdown">
+                    <button class="btn btn-outline-success rounded-pill dropdown-toggle shadow-sm"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        <i class="fas fa-user-circle me-2"></i> @username
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end mt-2 shadow-sm">
+                        @if (userRole == "Poet")
+                        {
+                            <li>
+                                <a class="dropdown-item" href="/my-ghazals">
+                                    <i class="fas fa-scroll me-2"></i> View Your Ghazals
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/userProfilePage">
+                                    <i class="fas fa-user-edit me-2"></i> Edit Your Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/addghazal">
+                                    <i class="fas fa-plus me-2"></i> Add Ghazal
+                                </a>
+                            </li>
+                        }
+                        else if (userRole == "Admin")
+                        {
+                            <li>
+                                <a class="dropdown-item" href="/user-admin">
+                                    <i class="fas fa-users-cog me-2"></i> Manage Users
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a class="dropdown-item" @onclick="HandleProfileNavigation">
+                                    <i class="fas fa-user me-2"></i> View Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/saveAdditionalInfo">
+                                    <i class="fas fa-plus-circle me-2"></i> Add Additional Info
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/becomeapoet">
+                                    <i class="fas fa-microphone me-2"></i> Become a Poet
+                                </a>
+                            </li>
+                        }
+
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                            <button class="dropdown-item text-danger" @onclick="Logout">
+                                <i class="fas fa-sign-out-alt me-2"></i> Logout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <button class="btn btn-outline-success rounded-pill shadow-sm" @onclick="Login">
+                    <i class="fab fa-google me-2"></i> Login with Google
+                </button>
+            }
+        </div>
+    </div>
+</nav>
+
+@if (showPoetAlert)
+{
+    <div id="poetAlert" class="alert alert-info alert-dismissible fade show m-3" role="alert">
+        <i class="fas fa-info-circle me-2"></i> You are already registered as a poet!
+        <button type="button" class="btn-close" aria-label="Close" @onclick="() => showPoetAlert = false"></button>
+    </div>
+}
+
+@code {
+    private bool isAuthenticated = false;
+    private string username = "User";
+    private string userRole = "User";
+    private bool showPoetAlert = false;
+    private string searchText = "";
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "nickname")]
+    public string? Nickname { get; set; }
+    private string searchNickname = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            isAuthenticated = true;
+            username = user.FindFirst(ClaimTypes.Name)?.Value
+                    ?? user.FindFirst("name")?.Value
+                    ?? user.FindFirst(ClaimTypes.GivenName)?.Value
+                    ?? user.FindFirst(ClaimTypes.Email)?.Value
+                    ?? "User";
+
+            userRole = user.FindFirst(ClaimTypes.Role)?.Value ?? "User";
+        }
+    }
+
+    private void Login() => NavManager.NavigateTo("logingoogle", forceLoad: true);
+
+    private async Task BecomePoet()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var email = user.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            NavManager.NavigateTo("logingoogle", forceLoad: true);
+            return;
+        }
+
+        var poet = await PoetService.GetPoetByEmailAsync(email);
+        showPoetAlert = poet != null;
+
+        if (!showPoetAlert)
+            NavManager.NavigateTo("/becomeapoet");
+    }
+
+    private async Task HandleProfileNavigation()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var email = user.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (!string.IsNullOrEmpty(email))
+        {
+            var profile = await GoogleUserLoginService.GetUserLoginByEmail(email);
+            if (profile != null)
+                NavManager.NavigateTo("/userProfilePage");
+            else
+                NavManager.NavigateTo("/saveAdditionalInfo");
+        }
+    }
+
+    private void Logout() => NavManager.NavigateTo("logout", forceLoad: true);
+
+    private void RedirectToSearchPage()
+    {
+        NavManager.NavigateTo("/search-poetry");
+    }
+    private void SearchPoetryByNickname()
+    {
+        if (!string.IsNullOrWhiteSpace(searchNickname))
+        {
+            Nav.NavigateTo($"/search-poetry?nickname={Uri.EscapeDataString(searchNickname)}", forceLoad: true);
+        }
+    }
+}

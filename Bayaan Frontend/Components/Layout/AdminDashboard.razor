@@ -1,0 +1,71 @@
+﻿@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager NavManager
+@attribute [Authorize(Roles = "Admin")]
+
+<div class="admin-container">
+    <h1 class="dashboard-heading">Welcome to Bayaan Admin Panel</h1>
+    <div class="panel-container">
+        <div class="card-item">
+            <h5>Manage Users</h5>
+            <p>View and manage registered users with comprehensive controls and insights.</p>
+            <button class="action-button bg-green-600" @onclick="GoToUsers">
+                Go to Users
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Search Users</h5>
+            <p>Search users by email or name with advanced filtering capabilities.</p>
+            <button class="action-button bg-blue-600" @onclick="@(() => NavManager.NavigateTo("/user-admin/search-user"))">
+                Search Users
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Manage Roles</h5>
+            <p>Assign and manage user roles with granular permission controls.</p>
+            <button class="action-button bg-purple-600" @onclick="@(() => NavManager.NavigateTo("/admin/manage-roles"))">
+                Manage Roles
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Search Ghazals</h5>
+            <p>Find ghazals by title or content with powerful search algorithms.</p>
+            <button class="action-button bg-indigo-600" @onclick="@(() => NavManager.NavigateTo("/admin/search-ghazals"))">
+                Search Ghazals
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Search Ghazals by Poet ID</h5>
+            <p>Find ghazals by a specific poet with detailed categorization.</p>
+            <button class="action-button bg-yellow-600" @onclick="@(() => NavManager.NavigateTo("/admin/search-ghazals-poet"))">
+                Ghazals by Poet
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Approve Poets</h5>
+            <p>Review and approve poet applications with streamlined workflow.</p>
+            <button class="action-button bg-teal-600" @onclick="@(() => NavManager.NavigateTo("/admin/approve-poets"))">
+                Approve Poets
+            </button>
+        </div>
+
+        <div class="card-item">
+            <h5>Approve Testimonials</h5>
+            <p>Review and approve or reject submitted user testimonials.</p>
+            <button class="action-button bg-red-600" @onclick="@(() => NavManager.NavigateTo("/admin/approve-testimonials"))">
+                Approve Testimonials
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void GoToUsers()
+    {
+        NavManager.NavigateTo("/user-admin");
+    }
+}

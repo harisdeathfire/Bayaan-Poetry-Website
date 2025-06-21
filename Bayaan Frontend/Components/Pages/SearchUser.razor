@@ -1,0 +1,108 @@
+﻿@page "/user-admin/search-user"
+@using Microsoft.AspNetCore.Authorization
+@inject IUserService UserService
+@inject IJSRuntime JSRuntime
+@attribute [Authorize(Roles = "Admin")]
+@rendermode InteractiveServer
+
+<h2 class="text-4xl font-semibold mb-6 text-gray-800">Search User by Email</h2>
+
+<hr class="mb-6 border-gray-300" />
+
+<div class="flex items-center gap-4 mb-6">
+    <input @bind="searchEmail"
+           @bind:event="oninput"
+           class="flex-grow p-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+           placeholder="Enter user's email…" />
+
+    <button @onclick="SearchUsers"
+            disabled="@isSearching"
+            class="@(isSearching ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600") text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md transition duration-300 ease-in-out">
+        Search
+    </button>
+</div>
+
+@if (isSearching)
+{
+    <p class="text-gray-500">Searching...</p>
+}
+else if (foundUser == null && !string.IsNullOrEmpty(searchEmail))
+{
+    <p class="text-red-500 font-semibold">User not found</p>
+}
+else if (foundUser is not null)
+{
+    <div class="bg-gray-100 p-6 rounded-md shadow-md border border-gray-300 max-w-md">
+        <img src="@foundUser.ProfileImageUrl" alt="@foundUser.FirstName" class="rounded-full w-32 h-32 object-cover mb-4 shadow-md" />
+
+        <h3 class="text-2xl font-semibold mb-2">
+            @foundUser.FirstName @foundUser.LastName
+        </h3>
+
+        <ul class="text-gray-700 space-y-1">
+            <li><strong>Nickname:</strong> @foundUser.NickName</li>
+            <li><strong>Date of Birth:</strong> @foundUser.DOB?.ToShortDateString()</li>
+            <li><strong>Email:</strong> @foundUser.Email</li>
+            <li><strong>City:</strong> @foundUser.City</li>
+            <li><strong>Country:</strong> @foundUser.Country</li>
+            <li><strong>Description:</strong> @foundUser.ShortDescription</li>
+            <li><strong>Is Active:</strong> @(foundUser.IsActive ? "Yes" : "No")</li>
+        </ul>
+
+        <button class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 mt-4 rounded-md shadow-md transition duration-300 ease-in-out"
+                @onclick="@(() => ConfirmDelete(foundUser.UId))">
+            Delete User
+        </button>
+    </div>
+}
+
+@code {
+    private string searchEmail = string.Empty;
+    private UserModel? foundUser;
+    private bool isSearching;
+
+    private async Task SearchUsers()
+    {
+        isSearching = true;
+
+        try
+        {
+            foundUser = await UserService.GetProfileByEmail(searchEmail);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Search failed: {ex.Message}");
+            foundUser = null;
+        }
+        finally
+        {
+            isSearching = false;
+        }
+    }
+
+    private async Task DeleteProfile(string id)
+    {
+        var result = await UserService.DeleteUserProfileAsync(id);
+        if (result)
+        {
+            Console.WriteLine("User deleted successfully.");
+            foundUser = null;
+            searchEmail = string.Empty;
+        }
+        else
+        {
+            Console.WriteLine("Failed to delete user.");
+        }
+    }
+
+    private async Task ConfirmDelete(string id)
+    {
+        var confirmed = await JSRuntime.InvokeAsync<bool>(
+            "confirm", $"Are you sure you want to delete user {id}? This will delete all their data.");
+
+        if (confirmed)
+        {
+            await DeleteProfile(id);
+        }
+    }
+}

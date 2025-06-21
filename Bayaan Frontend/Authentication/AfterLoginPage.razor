@@ -1,0 +1,63 @@
+﻿@page "/after-login"
+@inject NavigationManager NavManager
+@inject IGoogleUserLoginService GoogleUserLoginService
+@using System.Security.Claims
+@using Entities
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Google
+@using Frontend.Authentication
+@using Repo.Iservices
+
+@code {
+    [CascadingParameter] public HttpContext httpContext { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (httpContext.User.Identity == null ||
+            !httpContext.User.Identity.IsAuthenticated)
+            return;
+
+        var name = httpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.GivenName)?.Value;
+        var email = httpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+        var idStr = httpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+
+        if (string.IsNullOrWhiteSpace(email) ||
+            string.IsNullOrWhiteSpace(name) ||
+            string.IsNullOrWhiteSpace(idStr))
+            return;
+
+        int.TryParse(idStr, out int userId);
+
+        // Check if the user already exists in the database first
+        var _user = await GoogleUserLoginService.GetUserLoginByEmail(email);
+        if (_user == null)
+        {
+            // If not, create new with a default role
+            _user = new GoogleUserLoginModel
+                {
+                    userId = userId,
+                    userEmail = email,
+                    userName = name,
+                    userRole = "User" // Default role
+                };
+            await GoogleUserLoginService.SaveUserLogin(_user);
+        }
+
+        var role = _user.userRole ?? "User";
+
+        var claims = new[]
+        {
+            new Claim(ClaimTypes.NameIdentifier, _user.userId.ToString()),
+            new Claim(ClaimTypes.GivenName, _user.userName ?? ""),
+            new Claim(ClaimTypes.Email, _user.userEmail ?? ""),
+            new Claim(ClaimTypes.Role, role)
+        };
+
+        var identity = new ClaimsIdentity(claims, AppConstants.AuthScheme);
+        var principal = new ClaimsPrincipal(identity);
+
+        await httpContext.SignInAsync(AppConstants.AuthScheme, principal);
+        NavManager.NavigateTo("/home");
+    }
+}

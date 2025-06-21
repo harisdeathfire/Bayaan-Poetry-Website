@@ -1,0 +1,147 @@
+﻿@page "/testimonials"
+@inject ITestimonialService TestimonialService
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+@if (testimonials == null)
+{
+    <div class="testimonial-container">
+        <p>Loading testimonials...</p>
+    </div>
+}
+else if (testimonials.Count == 0)
+{
+    <div class="testimonial-container">
+        <p>No testimonials available.</p>
+    </div>
+}
+else if (currentIndex >= testimonials.Count)
+{
+    <div class="testimonial-container">
+        <p>Testimonial index out of range.</p>
+    </div>
+}
+else
+{
+    <div class="testimonial-container">
+        <!-- Testimonial Slider -->
+        <div id="testimonial-slider" class="testimonial-slider">
+            <button class="nav-button prev" @onclick="PreviousSlide">‹</button>
+            <button class="nav-button next" @onclick="NextSlide">›</button>
+            <div class="testimonial-content" id="testimonial-content">
+                <img src="@testimonials[currentIndex].AuthorImageUrl"
+                     alt="@testimonials[currentIndex].Author" />
+                @if (!string.IsNullOrEmpty(testimonials[currentIndex].Title))
+                {
+                    <h3>@testimonials[currentIndex].Title</h3>
+                }
+                <p class="testimonial-message">@testimonials[currentIndex].Message</p>
+                <div class="testimonial-author">
+                    <span>@testimonials[currentIndex].Author</span>
+                    @if (!string.IsNullOrWhiteSpace(testimonials[currentIndex].AuthorRole))
+                    {
+                        <span class="text-sm">@testimonials[currentIndex].AuthorRole</span>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(testimonials[currentIndex].CountryCode))
+                    {
+                        <img src="@GetFlagImageUrl(testimonials[currentIndex].CountryCode)"
+                             alt="@testimonials[currentIndex].CountryCode flag" />
+                    }
+                </div>
+                @if (testimonials[currentIndex].Rating > 0)
+                {
+                    <div class="text-yellow-500">
+                        @for (int i = 0; i < testimonials[currentIndex].Rating; i++)
+                        {
+                            <i class="fas fa-star"></i>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls" id="slider-controls">
+            @for (int i = 0; i < testimonials.Count; i++)
+            {
+                <div class="slider-dot @(i == currentIndex ? "active" : "")" @onclick="() => GoToSlide(i)"></div>
+            }
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <p class="cta-text">Want to add your testimonial?</p>
+            <button class="submit-button" @onclick="RedirectToSubmit">
+                Submit Testimonial
+            </button>
+        </div>
+    </div>
+}
+
+@code {
+    private List<TestimonialModel> testimonials;
+    private int currentIndex = 0;
+    private Timer _timer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        testimonials = (await TestimonialService.GetAllTestimonialsAsync())
+            .Where(t => t.IsApproved)
+            .OrderByDescending(t => t.CreatedAt)
+            .ToList();
+
+        if (testimonials.Count > 1)
+        {
+            _timer = new Timer(SwitchTestimonial, null, 5000, 5000);
+        }
+    }
+
+    private void SwitchTestimonial(object state)
+    {
+        if (testimonials?.Count > 0)
+        {
+            currentIndex = (currentIndex + 1) % testimonials.Count;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private void GoToSlide(int index)
+    {
+        if (index >= 0 && index < testimonials.Count)
+        {
+            currentIndex = index;
+        }
+    }
+
+    private void NextSlide()
+    {
+        if (testimonials.Count > 0)
+        {
+            currentIndex = (currentIndex + 1) % testimonials.Count;
+        }
+    }
+
+    private void PreviousSlide()
+    {
+        if (testimonials.Count > 0)
+        {
+            currentIndex = (currentIndex - 1 + testimonials.Count) % testimonials.Count;
+        }
+    }
+
+    private void RedirectToSubmit()
+    {
+        NavManager.NavigateTo("/submit-testimonial");
+    }
+
+    private string GetFlagImageUrl(string countryCode)
+    {
+        if (string.IsNullOrWhiteSpace(countryCode)) return "";
+        return $"https://flagcdn.com/w40/{countryCode.ToLower()}.png";
+    }
+
+    public void Dispose()
+    {
+        _timer?.Dispose();
+    }
+}

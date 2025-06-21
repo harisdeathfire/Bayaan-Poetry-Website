@@ -1,0 +1,106 @@
+﻿@inject AuthenticationStateProvider AuthenticationStateProvider
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authorization
+@rendermode InteractiveServer
+@inject NavigationManager NavManager
+@attribute [Authorize(Roles = "Admin")]
+
+<div class="top-row">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="">Admin Panel</a>
+    </div>
+</div>
+
+<!-- Navigation Menu -->
+<div class="nav-menu" id="navMenu">
+    <nav>
+        <!-- Main Dashboard -->
+        <div class="nav-item">
+            <a class="nav-link active" href="home">
+                <i class="fa-solid fa-house icon"></i>
+                Dashboard
+            </a>
+        </div>
+
+        <!-- Admin Section -->
+        <div class="nav-section-admin">
+            <div class="nav-item">
+                <a class="nav-link" href="/user-admin">
+                    <i class="fa-solid fa-users icon"></i>
+                    User Profiles
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/user-admin/search-user">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    Search User
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/admin/manage-roles">
+                    <i class="fa-solid fa-shield-halved icon"></i>
+                    Manage Roles
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/admin/search-ghazals">
+                    <i class="fa-solid fa-book icon"></i>
+                    Search Ghazals
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/admin/search-ghazals-poet">
+                    <i class="fa-solid fa-pen-nib icon"></i>
+                    Ghazals by Poet ID
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/admin/approve-poets">
+                    <i class="fa-solid fa-circle-check icon"></i>
+                    Approve Poets
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/admin/approve-testimonials">
+                    <i class="fa-solid fa-quote-left icon me-2"></i>
+                    Approve Testimonials
+                </a>
+            </div>
+
+        </div>
+
+        <!-- User Section -->
+        <div class="nav-section-user">
+            <div class="nav-item">
+                <a class="nav-link" href="/UserProfilePage">
+                    <i class="fa-solid fa-user icon"></i>
+                    User Profile
+                </a>
+            </div>
+        </div>
+
+        <!-- Authentication Section -->
+        <div class="nav-section-auth">
+            <div class="nav-item">
+                <a class="nav-link" href="#" @onclick="Logout">
+                    <i class="fa-solid fa-right-to-bracket icon"></i>
+                    Logout
+                </a>
+            </div>
+        </div>
+
+    </nav>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = false;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : "show";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    private void Logout() => NavManager.NavigateTo("logout", forceLoad: true);
+}

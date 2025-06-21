@@ -1,0 +1,251 @@
+.poetry-search-container[b-8kmnr201xz] {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Search Header */
+.search-header[b-8kmnr201xz] {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.search-title[b-8kmnr201xz] {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #059669, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+    .search-title[b-8kmnr201xz]::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #059669, #10b981, #34d399);
+        border-radius: 2px;
+    }
+
+.search-subtitle[b-8kmnr201xz] {
+    color: #6b7280;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* Results Container */
+.results-container[b-8kmnr201xz] {
+    margin-top: 2rem;
+}
+
+.poetry-card[b-8kmnr201xz] {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px -8px rgba(5, 150, 105, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(5, 150, 105, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+    .poetry-card[b-8kmnr201xz]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #059669, #10b981, #34d399);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .poetry-card:hover[b-8kmnr201xz] {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 48px -8px rgba(5, 150, 105, 0.15), 0 8px 24px -4px rgba(0, 0, 0, 0.1);
+    }
+
+        .poetry-card:hover[b-8kmnr201xz]::before {
+            transform: scaleX(1);
+        }
+
+.poet-info[b-8kmnr201xz] {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.poet-avatar[b-8kmnr201xz] {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(5, 150, 105, 0.2);
+    box-shadow: 0 4px 12px -4px rgba(5, 150, 105, 0.2);
+    transition: all 0.3s ease;
+}
+
+.poetry-card:hover .poet-avatar[b-8kmnr201xz] {
+    border-color: #059669;
+    box-shadow: 0 8px 24px -8px rgba(5, 150, 105, 0.3);
+}
+
+.poet-details h4[b-8kmnr201xz] {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.poet-style[b-8kmnr201xz] {
+    color: #059669;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.poet-bio[b-8kmnr201xz] {
+    color: #6b7280;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.divider[b-8kmnr201xz] {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(5, 150, 105, 0.2), transparent);
+    margin: 1.5rem 0;
+}
+
+.ghazal-title[b-8kmnr201xz] {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.view-button[b-8kmnr201xz] {
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(16, 185, 129, 0.1));
+    color: #059669;
+    border: 2px solid rgba(5, 150, 105, 0.2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .view-button:hover[b-8kmnr201xz] {
+        background: linear-gradient(135deg, #059669, #10b981);
+        color: white;
+        border-color: #059669;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px -4px rgba(5, 150, 105, 0.3);
+    }
+
+.no-results[b-8kmnr201xz] {
+    text-align: center;
+    padding: 3rem;
+    color: #ef4444;
+    font-size: 1.1rem;
+    background: rgba(239, 68, 68, 0.05);
+    border: 2px dashed rgba(239, 68, 68, 0.2);
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+
+    .no-results[b-8kmnr201xz]::before {
+        content: '🔍';
+        display: block;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        opacity: 0.7;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .poetry-search-container[b-8kmnr201xz] {
+        padding: 1rem;
+    }
+
+    .search-title[b-8kmnr201xz] {
+        font-size: 2rem;
+    }
+
+    .search-form[b-8kmnr201xz] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input-container[b-8kmnr201xz] {
+        max-width: 100%;
+    }
+
+    .search-button[b-8kmnr201xz] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .poet-info[b-8kmnr201xz] {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .poetry-card[b-8kmnr201xz] {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-title[b-8kmnr201xz] {
+        font-size: 1.8rem;
+    }
+
+    .poet-avatar[b-8kmnr201xz] {
+        width: 60px;
+        height: 60px;
+    }
+
+    .poetry-card[b-8kmnr201xz] {
+        padding: 1rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .poetry-card[b-8kmnr201xz],
+    .search-button[b-8kmnr201xz],
+    .view-button[b-8kmnr201xz] {
+        transition: none;
+    }
+
+        .poetry-card:hover[b-8kmnr201xz],
+        .search-button:hover[b-8kmnr201xz],
+        .view-button:hover[b-8kmnr201xz] {
+            transform: none;
+        }
+}
+
+/* Focus states */
+.search-input:focus[b-8kmnr201xz],
+.search-button:focus[b-8kmnr201xz],
+.view-button:focus[b-8kmnr201xz] {
+    outline: 2px solid #059669;
+    outline-offset: 2px;
+}

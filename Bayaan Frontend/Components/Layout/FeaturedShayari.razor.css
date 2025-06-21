@@ -1,0 +1,107 @@
+﻿.featured-shayari {
+    background: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #198754;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.shayari-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #198754;
+    transition: all 0.4s ease;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.8rem;
+    line-height: 2.2;
+    color: #222;
+    text-align: right;
+    direction: rtl;
+}
+
+    .shayari-quote:hover {
+        background-color: #ffffff;
+        border-color: #146c43;
+        box-shadow: 0 10px 30px rgba(25, 135, 84, 0.2);
+        transform: translateY(-6px);
+    }
+
+.shayari-author {
+    margin-top: 20px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.4rem;
+    color: #198754;
+    text-align: right;
+    direction: rtl;
+}
+
+/* Optional: Enhance the quote look with a soft green glow on hover */
+.shayari-quote:hover::before {
+    opacity: 1;
+}
+
+/* Button style used elsewhere */
+.btn-outline-success {
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    transition: all 0.3s ease;
+    border-color: #198754;
+}
+
+    .btn-outline-success:hover {
+        background-color: #198754;
+        color: white;
+        border-color: #198754;
+    }
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .shayari-quote {
+        font-size: 1.6rem;
+        padding: 25px;
+    }
+
+    .shayari-author {
+        font-size: 1.2rem;
+    }
+}
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-delay {
+    animation-delay: 0.3s;
+}
+

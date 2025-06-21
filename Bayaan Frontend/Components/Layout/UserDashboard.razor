@@ -1,0 +1,56 @@
+﻿@inject NavigationManager NavManager
+
+<header class="dashboard-header">
+    <h1 class="main-title">User Dashboard</h1>
+    <p class="main-subtitle">Welcome back! Manage your account and explore your data.</p>
+</header>
+
+<!-- Main Content -->
+<main class="dashboard-content">
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+        <!-- Profile Section -->
+        <section class="dashboard-section profile-section">
+            <h2 class="section-title">Your Profile</h2>
+            <p class="section-description">
+                View and manage your personal information, update your preferences, and control your account settings.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">📝</div>
+                    <div class="stat-label">Your Poetry Journey Begins</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">📢</div>
+                    <div class="stat-label">Your Voice Reaches the World</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">🌟</div>
+                    <div class="stat-label">Let Your Words Inspire</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">🤝</div>
+                    <div class="stat-label">Join the Bayaan Community</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="dashboard-button btn-primary" @onclick="GoToProfile">View Profile</button>
+                <button class="dashboard-button btn-secondary" @onclick="GoToAdditionalInfo">Add Additional Info</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+@code {
+    private void GoToProfile()
+    {
+        NavManager.NavigateTo("/userProfilePage");
+    }
+
+    private void GoToAdditionalInfo()
+    {
+        NavManager.NavigateTo("/saveAdditionalInfo");
+    }
+}

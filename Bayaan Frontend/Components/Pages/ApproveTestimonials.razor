@@ -1,0 +1,114 @@
+﻿@page "/admin/approve-testimonials"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@inject ITestimonialService TestimonialService
+@inject IJSRuntime JS
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+<div class="container">
+    <!-- Enhanced Header -->
+    <div class="page-header">
+        <h2 class="page-title">Approve Testimonials</h2>
+        <p class="page-subtitle">Review and manage customer testimonials with style</p>
+    </div>
+
+    @if (testimonials == null)
+    {
+        <div class="state-message" id="loading-state">
+            <div class="icon">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="text">Loading testimonials...</div>
+        </div>
+    }
+    else if (testimonials.Count == 0)
+    {
+        <div class="state-message" id="empty-state">
+            <div class="icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="text">No unapproved testimonials found.</div>
+        </div>
+    }
+    else
+    {
+        <div class="testimonials-grid" id="testimonials-container">
+            @foreach (var t in testimonials)
+            {
+                <div class="testimonial-card">
+                    <div class="author-section">
+                        <img src="@t.AuthorImageUrl"
+                             alt="@t.Author"
+                             class="author-image" />
+                        <div class="author-info">
+                            <h3 class="author-name">@t.Author</h3>
+                            <div class="author-details">
+                                <span class="author-role">@t.AuthorRole</span>
+                                <span class="separator">|</span>
+                                <img src="@GetFlagImageUrl(t.CountryCode)"
+                                     alt="@t.CountryCode flag"
+                                     class="country-flag" />
+                                <span>@t.CountryCode</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="testimonial-title">@t.Title</h4>
+
+                    <p class="testimonial-message">
+                        @t.Message
+                    </p>
+
+                    <div class="rating-section">
+                        @for (int i = 0; i < t.Rating; i++)
+                        {
+                            <i class="fas fa-star star" style="--i: @i"></i>
+                        }
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="action-button approve-button" @onclick="() => Approve(t.Id)">
+                            <i class="fas fa-check"></i> Approve
+                        </button>
+                        <button class="action-button reject-button" @onclick="() => Reject(t.Id)">
+                            <i class="fas fa-times"></i> Reject
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<TestimonialModel> testimonials;
+
+    protected override async Task OnInitializedAsync()
+    {
+        testimonials = (await TestimonialService.GetAllTestimonialsAsync())
+            .Where(t => !t.IsApproved)
+            .OrderByDescending(t => t.CreatedAt)
+            .ToList();
+    }
+
+    private async Task Approve(int id)
+    {
+        await TestimonialService.ApproveTestimonialAsync(id);
+        testimonials = testimonials.Where(t => t.Id != id).ToList();
+        await JS.InvokeVoidAsync("alert", "Testimonial approved successfully!");
+    }
+
+    private async Task Reject(int id)
+    {
+        await TestimonialService.RejectTestimonialAsync(id);
+        testimonials = testimonials.Where(t => t.Id != id).ToList();
+        await JS.InvokeVoidAsync("alert", "Testimonial rejected and removed.");
+    }
+
+    private string GetFlagImageUrl(string countryCode)
+    {
+        if (string.IsNullOrWhiteSpace(countryCode)) return "";
+        return $"https://flagcdn.com/w40/{countryCode.ToLower()}.png";
+    }
+}

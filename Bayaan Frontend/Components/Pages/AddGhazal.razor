@@ -1,0 +1,162 @@
+﻿@page "/addghazal"
+@inject IGhazalService GhazalService
+@inject IPoetService PoetService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@using Entities
+@using Microsoft.AspNetCore.Authorization
+@using Newtonsoft.Json
+@attribute [Authorize(Roles = "Poet")]
+@using System.Security.Claims
+@using Repo.IServices
+@rendermode InteractiveServer
+@layout UserLayout
+
+<h3 class="heading">Add Ghazal</h3>
+
+<EditForm Model="@ghazalModel" OnValidSubmit="HandleValidSubmit" class="ghazal-form">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="title">Title</label>
+        <InputText id="title" class="form-control custom-input"
+                   @bind-Value="ghazalModel.Title"
+                   placeholder="Enter Ghazal Title" />
+        <ValidationMessage For="@(() => ghazalModel.Title)" />
+    </div>
+
+    @if (ghazalModel?.Couplets != null)
+    {
+        @for (int i = 0; i < ghazalModel.Couplets.Count; i++)
+        {
+            var index = i;
+            <!-- fixes closure issue -->
+
+            <div class="couplet-group">
+                <label>Line 1</label>
+                <InputText class="form-control custom-input"
+                           @bind-Value="ghazalModel.Couplets[index].Line1"
+                           placeholder="Enter Line 1" />
+                <ValidationMessage For="@(() => ghazalModel.Couplets[index].Line1)" />
+
+                <label>Line 2</label>
+                <InputText class="form-control custom-input"
+                           @bind-Value="ghazalModel.Couplets[index].Line2"
+                           placeholder="Enter Line 2" />
+                <ValidationMessage For="@(() => ghazalModel.Couplets[index].Line2)" />
+            </div>
+        }
+    }
+
+    <div class="form-action">
+        <button type="button" class="add-couplet-button" @onclick="AddCouplet">+ Add Another Sher</button>
+        <button type="submit" class="submit-button">Submit Ghazal</button>
+    </div>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(statusMessage))
+{
+    <div class="@((statusMessage.Contains("Error")) ? "alert danger" : "alert success")">
+        @statusMessage
+    </div>
+}
+
+@code {
+    private GhazalModel ghazalModel = new GhazalModel
+        {
+            GhazalId = "G" + Guid.NewGuid().ToString("N").Substring(0, 8),
+            PoetId = "",
+            CreatedAt = DateTime.Now,
+            Couplets = new List<CoupletsModel> { new CoupletsModel() }
+        };
+
+    private string statusMessage = "";
+
+    private void AddCouplet()
+    {
+        ghazalModel.Couplets.Add(new CoupletsModel());
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var email = user.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            statusMessage = "Error: Email not found.";
+            return;
+        }
+
+        var poet = await PoetService.GetPoetByEmailAsync(email);
+        if (poet == null)
+        {
+            statusMessage = "Error: You are not a registered Poet.";
+        }
+        else
+        {
+            ghazalModel.PoetId = poet.UId;
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            // Check for incomplete couplets
+            bool hasIncomplete = ghazalModel.Couplets.Any(c =>
+                (string.IsNullOrWhiteSpace(c.Line1) && !string.IsNullOrWhiteSpace(c.Line2)) ||
+                (!string.IsNullOrWhiteSpace(c.Line1) && string.IsNullOrWhiteSpace(c.Line2)));
+
+            if (hasIncomplete)
+            {
+                statusMessage = "Error: Each couplet must have both Line 1 and Line 2.";
+                return;
+            }
+
+            // Define regex to allow only letters and spaces
+            var regex = new System.Text.RegularExpressions.Regex(@"^[\p{L}\s]+$");
+
+            // Check each line for valid content
+            foreach (var couplet in ghazalModel.Couplets)
+            {
+                if (!string.IsNullOrWhiteSpace(couplet.Line1) && !regex.IsMatch(couplet.Line1))
+                {
+                    statusMessage = "Error: Line 1 can only contain letters and spaces.";
+                    return;
+                }
+
+                if (!string.IsNullOrWhiteSpace(couplet.Line2) && !regex.IsMatch(couplet.Line2))
+                {
+                    statusMessage = "Error: Line 2 can only contain letters and spaces.";
+                    return;
+                }
+            }
+
+            // Filter valid couplets (both lines present)
+            var validCouplets = ghazalModel.Couplets
+                .Where(c => !string.IsNullOrWhiteSpace(c.Line1) && !string.IsNullOrWhiteSpace(c.Line2))
+                .ToList();
+
+            if (!validCouplets.Any())
+            {
+                statusMessage = "Error: At least one complete couplet is required.";
+                return;
+            }
+
+            ghazalModel.GhazalJson = JsonConvert.SerializeObject(new
+            {
+                Couplets = validCouplets
+            });
+
+            await GhazalService.InsertGhazal(ghazalModel);
+            statusMessage = "Ghazal submitted successfully!";
+        }
+        catch (Exception ex)
+        {
+            statusMessage = $"Error: {ex.Message}";
+        }
+    }
+
+}

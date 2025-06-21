@@ -1,0 +1,93 @@
+﻿@page "/view-poets"
+@using Repo.IServices
+@inject IPoetService PoetService
+@inject IGhazalService GhazalService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@layout UserLayout
+@inject NavigationManager Nav
+@rendermode InteractiveServer
+
+<h2 class="bayaan-heading">All Poets & Their Ghazals</h2>
+
+@if (isLoading)
+{
+    <div class="bayaan-loading">Loading poets...</div>
+}
+else if (poets == null || !poets.Any())
+{
+    <div class="bayaan-warning">No poets found.</div>
+}
+else
+{
+    <div class="bayaan-poet-grid">
+        @foreach (var poet in poets)
+        {
+            <div class="bayaan-poet-card">
+                @if (!string.IsNullOrEmpty(poet.ProfileImageUrl))
+                {
+                    <img src="@poet.ProfileImageUrl" alt="Profile Image" class="bayaan-profile-img" />
+                }
+                else
+                {
+                    <img src="/images/default-profile.png" alt="Default Image" class="bayaan-profile-img" />
+                }
+
+                <h3 class="bayaan-nickname">@poet.NickName</h3>
+                <p class="bayaan-style">Style: <em>@poet.PoetryStyle</em></p>
+                <p class="bayaan-bio">@poet.Biography</p>
+                <p class="bayaan-date"><strong>Became Poet:</strong> @(poet.BecamePoetAt?.ToString("MMMM yyyy") ?? "Unknown")</p>
+
+                <button class="bayaan-view-btn" @onclick="@(() => LoadPoetGhazals(poet.Email))">
+                    View Poetry
+                </button>
+
+                @if (selectedPoetEmail == poet.Email && poetGhazals != null)
+                {
+                    <div class="bayaan-ghazal-list">
+                        @if (!poetGhazals.Any())
+                        {
+                            <p class="bayaan-muted">No Ghazals found.</p>
+                        }
+                        else
+                        {
+                            @foreach (var ghazal in poetGhazals)
+                            {
+                                <div class="bayaan-ghazal-item">
+                                    <h5>@ghazal.Title</h5>
+                                    <p class="bayaan-ghazal-date">@ghazal.CreatedAt.ToString("dd MMM yyyy")</p>
+                                    <button class="bayaan-ghazal-btn" @onclick="@(() => ViewGhazal(ghazal.GhazalId))">
+                                        View Ghazal
+                                    </button>
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<PoetModel> poets;
+    private List<GhazalModel> poetGhazals;
+    private string selectedPoetEmail;
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        poets = await PoetService.GetAllPoetsAsync();
+        isLoading = false;
+    }
+
+    private async Task LoadPoetGhazals(string email)
+    {
+        selectedPoetEmail = email;
+        poetGhazals = await GhazalService.GetGhazalsByEmailAsync(email);
+    }
+
+    private void ViewGhazal(string ghazalId)
+    {
+        Nav.NavigateTo($"/ghazal/{ghazalId}");
+    }
+}

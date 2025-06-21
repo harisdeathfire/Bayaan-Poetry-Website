@@ -1,0 +1,82 @@
+﻿.hero-section {
+    position: relative;
+    min-height: 100vh; /* Ensure full viewport height */
+    background: center/cover no-repeat;
+    background-size: cover;
+    background-image: url('images/oleg-gherlac-nhf66y_4x-c-unsplash.jpg'); /* Your hero image */
+    padding: 0; /* Remove unnecessary padding */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    overflow: hidden; /* Prevent any content overflow */
+    margin-top: 0; /* Ensure no margin is applied */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align text */
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif; /* Elegant serif font */
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+    margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f1f1f1;
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-out;
+    margin-bottom: 30px; /* Add spacing below subtitle */
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    transition: all 0.4s ease;
+    border-radius: 25px;
+    background: #198754;
+    color: white;
+    border: 2px solid #198754;
+    margin: 0 10px; /* Spacing between buttons */
+}
+
+    .cta-buttons a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: #157347; /* Slightly darker green on hover */
+        color: white;
+        border-color: #157347;
+    }
+
+
+.parallax-bg {
+    background: url('/images/hero-bg-blurred.jpg') center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+    transition: all 1s ease;
+}
+
+/* Animation for title and subtitle */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

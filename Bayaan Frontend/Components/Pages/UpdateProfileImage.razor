@@ -1,0 +1,152 @@
+﻿@page "/updateProfileImage"
+@using System.Text
+@using System.Security.Claims
+@inject IUserService UserService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavManager
+@layout UserLayout
+@rendermode InteractiveServer
+
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="bg-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+</div>
+
+<div class="container">
+    <h2 class="title">Update Your Profile Picture</h2>
+
+    @if (!string.IsNullOrWhiteSpace(errorMessage))
+    {
+        <div class="error-message text-red-600 mb-3">
+            <i class="fas fa-exclamation-circle me-2"></i> @errorMessage
+        </div>
+    }
+
+    <div class="profile-section">
+        <div class="profile-image">
+            <img src="@currentProfilePictureSource" alt="Profile Picture" class="rounded-full w-40 h-40 object-cover shadow-md" />
+        </div>
+
+        <div class="file-input-wrapper mt-4">
+            <label for="profilePicture" class="file-input-label btn btn-outline-primary">
+                <i class="fas fa-camera me-2"></i> Select New Picture
+            </label>
+            <InputFile id="profilePicture" OnChange="OnProfilePictureChange" accept="image/*" class="hidden" />
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <button class="btn btn-primary me-2" @onclick="SaveProfilePicture" disabled="@isSubmitting">
+            <i class="fas fa-save me-2"></i> Save Image
+        </button>
+
+        <button class="btn btn-secondary" @onclick="GoBackToProfile">
+            <i class="fas fa-arrow-left me-2"></i> Cancel
+        </button>
+    </div>
+</div>
+
+
+@code {
+    private bool isSubmitting = false;
+    private string errorMessage = string.Empty;
+
+    private byte[]? profilePicture;
+    private UserModel profile = new UserModel();
+
+    private ClaimsPrincipal? claimsUser;
+
+    private string currentProfilePictureSource = "/images/default-profile.jpg";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        claimsUser = authState.User;
+
+        var email = claimsUser.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            NavManager.NavigateTo("/logingoogle");
+            return;
+        }
+
+        var currentUser = await UserService.GetProfileByEmail(email);
+        if (currentUser == null)
+        {
+            NavManager.NavigateTo("/logingoogle");
+            return;
+        }
+
+        profile = currentUser;
+
+        if (!string.IsNullOrEmpty(profile.ProfileImageUrl))
+        {
+            currentProfilePictureSource = profile.ProfileImageUrl;
+        }
+    }
+
+    private async Task SaveProfilePicture()
+    {
+        isSubmitting = true;
+        errorMessage = "";
+
+        try
+        {
+            if (profilePicture == null)
+            {
+                errorMessage = "Please select a picture first.";
+                return;
+            }
+
+            var fileName = Guid.NewGuid().ToString() + ".jpg";
+            var relativePath = $"/images/users/{fileName}";
+            var absolutePath = Path.Combine("wwwroot", "images", "users", fileName);
+
+            var dir = Path.GetDirectoryName(absolutePath);
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir!);
+            }
+
+            await File.WriteAllBytesAsync(absolutePath, profilePicture);
+
+            profile.ProfileImageUrl = relativePath;
+            await UserService.Update(profile);
+
+            NavManager.NavigateTo("/userProfilePage");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Profile update failed: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    private async Task OnProfilePictureChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+
+        if (file == null) return;
+
+        using var stream = new MemoryStream();
+        await file.OpenReadStream().CopyToAsync(stream);
+        profilePicture = stream.ToArray();
+
+        var base64 = Convert.ToBase64String(profilePicture);
+        currentProfilePictureSource = $"data:image/jpeg;base64,{base64}";
+    }
+
+    private void GoBackToProfile()
+    {
+        NavManager.NavigateTo("/userProfilePage");
+    }
+}

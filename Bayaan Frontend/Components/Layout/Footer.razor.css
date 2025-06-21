@@ -1,0 +1,94 @@
+﻿.custom-footer {
+    background: linear-gradient(145deg, #0b2f24, #145c41);
+    border-top: 5px solid #e4d8b4;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.footer-brand {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #e4d8b4;
+}
+
+.footer-tagline {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.25rem;
+    color: #f2f2f2;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-link {
+    position: relative;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .footer-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background-color: #e4d8b4;
+        transition: width 0.4s ease;
+    }
+
+    .footer-link:hover {
+        color: #e4d8b4;
+    }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-icon {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+    .footer-icon:hover {
+        color: #e4d8b4;
+        transform: scale(1.3);
+    }
+
+.small.text-muted {
+    color: #ccc !important;
+}
+
+@media (max-width: 576px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-icon {
+        font-size: 1.2rem;
+    }
+
+    .footer-brand {
+        font-size: 2rem;
+    }
+
+    .footer-tagline {
+        font-size: 1rem;
+    }
+}

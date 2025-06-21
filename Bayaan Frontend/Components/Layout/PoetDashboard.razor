@@ -1,0 +1,80 @@
+﻿@using Repo.IServices
+@inject NavigationManager NavManager
+@inject IPoetService PoetService
+@inject IGhazalService GhazalService
+
+<header class="dashboard-header">
+    <h1 class="main-title">Welcome to Poet Dashboard</h1>
+    <p class="main-subtitle">Express your creativity and manage your poetic journey with elegance.</p>
+</header>
+
+<!-- Main Content -->
+<main class="dashboard-content">
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+        <!-- View Ghazals Section -->
+        <section class="dashboard-section ghazals-section">
+            <h2 class="section-title">View My Ghazals</h2>
+            <p class="section-description">
+                See all your ghazals in your collection. Explore your poetic creations and share your artistic expressions with the world.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-text">You’ve been crafting beautiful verses consistently. Keep the poetic rhythm alive!</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-text">Your words this month have added more depth to your collection. Keep expressing!</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <a href="/my-ghazals" class="dashboard-button btn-primary">View Ghazals</a>
+            </div>
+
+        </section>
+
+        <!-- Profile Section -->
+        <section class="dashboard-section profile-section">
+            <h2 class="section-title">Edit Your Profile</h2>
+            <p class="section-description">
+                Edit your profile details and customize your poet persona. Update your biography, preferences, and showcase your literary identity.
+            </p>
+
+            <div class="button-group">
+                <a href="/userProfilePage" class="dashboard-button btn-primary">View Profile</a>
+                <button class="dashboard-button btn-secondary" @onclick="GoToAdditionalInfo">Add Additional Info</button>
+                <button class="dashboard-button btn-dark" @onclick="GoToUpdatePoet">Update Your Poet Profile</button>
+                <a href="/view-poetdata" class="dashboard-button btn-primary">View Poet Profile</a>
+            </div>
+        </section>
+
+        <!-- Add Ghazal Section -->
+        <section class="dashboard-section create-section">
+            <h2 class="section-title">Add New Ghazal</h2>
+            <p class="section-description">
+                Create a new ghazal and add it to your collection. Let your creativity flow and craft beautiful verses that touch hearts.
+            </p>
+            <div class="button-group">
+                <a href="/addghazal" class="dashboard-button btn-primary">Add Ghazal</a>
+                
+            </div>
+        </section>
+    </div>
+</main>
+
+@code {
+
+    @code {
+        private void GoToAdditionalInfo()
+        {
+            NavManager.NavigateTo("/saveAdditionalInfo");
+        }
+
+        private void GoToUpdatePoet()
+        {
+            NavManager.NavigateTo("/update-poet");
+        }
+    }
+
+}

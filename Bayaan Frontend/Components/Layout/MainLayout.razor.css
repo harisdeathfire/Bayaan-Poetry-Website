@@ -1,0 +1,406 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Integration with existing page layout */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Enhanced Top Navigation Bar - matches your existing styles */
+.top-row {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    justify-content: flex-end;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .top-row::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    }
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+    .navbar-brand::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .navbar-brand:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+    }
+
+        .navbar-brand:hover::before {
+            left: 100%;
+        }
+
+.navbar-toggler {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+    .navbar-toggler::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .navbar-toggler:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+        .navbar-toggler:hover::before {
+            left: 100%;
+        }
+
+/* Enhanced Navigation Menu - matches sidebar styling */
+.nav-menu {
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 50%, rgba(5, 39, 103, 0.1) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .nav-menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    }
+
+    .nav-menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+    }
+
+.nav-section-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+    .nav-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: -1;
+    }
+
+    .nav-link:hover {
+        color: white;
+        transform: translateX(8px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+        .nav-link:hover::before {
+            left: 0;
+        }
+
+    .nav-link.active {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
+        color: white;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-link .icon {
+        margin-right: 0.75rem;
+        font-size: 1.1rem;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover .icon {
+        transform: scale(1.1);
+        animation: bounce 0.6s ease;
+    }
+
+/* Enhanced Section Separators */
+.nav-section-admin,
+.nav-section-user,
+.nav-section-auth {
+    position: relative;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+    .nav-section-admin::before,
+    .nav-section-user::before,
+    .nav-section-auth::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        right: 1rem;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    }
+
+    .nav-section-admin::after {
+        content: 'Admin Controls';
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem;
+        background: linear-gradient(180deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 100%);
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-section-user::after {
+        content: 'User Area';
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem;
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.15));
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-section-auth::after {
+        content: 'Authentication';
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem;
+        background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.15));
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+/* Enhanced Responsive Design - matches your existing breakpoints */
+@media (max-width: 640.98px) {
+    .nav-menu {
+        margin: 1rem;
+        padding: 1.5rem;
+        background: linear-gradient(180deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.2) 50%, rgba(5, 39, 103, 0.15) 100%);
+    }
+
+    .container-fluid {
+        padding: 0 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .top-row {
+        justify-content: space-between;
+        padding: 0 1rem;
+        height: 3.5rem;
+    }
+}
+
+/* Desktop layout enhancements - matches your existing desktop styles */
+@media (min-width: 641px) {
+    .nav-menu {
+        width: 280px;
+        height: calc(100vh - 4rem);
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        margin: 0;
+        border-radius: 0;
+        background: linear-gradient(180deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 50%, rgba(5, 39, 103, 0.1) 100%);
+        backdrop-filter: blur(20px);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 8px 0 32px rgba(0, 0, 0, 0.1);
+        max-width: none;
+        overflow-y: auto;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        margin: 0;
+    }
+
+        .top-row.auth {
+            justify-content: flex-end;
+        }
+
+            .top-row.auth .container-fluid a:first-child {
+                flex: 1;
+                text-align: right;
+                width: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+}
+
+/* Enhanced Animation for menu toggle - matches your existing animations */
+.nav-menu.collapsed {
+    display: none;
+}
+
+.nav-menu:not(.collapsed) {
+    animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced hover effects for emojis - matches your existing animations */
+.nav-link:hover .icon {
+    animation: bounce 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) scale(1.1);
+    }
+
+    40% {
+        transform: translateY(-3px) scale(1.1);
+    }
+
+    60% {
+        transform: translateY(-2px) scale(1.1);
+    }
+}
+
+/* Enhanced scrollbar styling - matches your existing scrollbar styles */
+.nav-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.nav-menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+    .nav-menu::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    }

@@ -1,0 +1,46 @@
+﻿@page "/logingoogle"
+@using Microsoft.AspNetCore.Components.Authorization
+@using Repo.Iservices
+@using System.Security.Claims
+@inject NavigationManager NavManager
+@using Frontend.Authentication
+@inject IUserService UserService
+@rendermode InteractiveServer
+@layout UserLayout
+
+<div class="min-h-screen bg-cover bg-center flex items-center justify-center py-20 px-4" style='background-image: url("https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0"); '>
+    <div class="bg-gray-50 bg-opacity-90 backdrop-blur-md shadow-2xl rounded-xl p-10 w-full max-w-md border-4 border-[#4285F4]">
+        <h2 class="text-2xl font-semibold text-center text-gray-900 mb-6">
+            Log In to Unlock the World of <span class="text-green-600 font-semibold">Bayaan™</span>
+        </h2>
+
+        <div class="flex justify-center">
+            <button @onclick="LoginWithGoogle" class="google-button">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                     class="h-5 w-5 mr-2" alt="Google logo" />
+
+                <span>Login with Google</span>
+            </button>
+        </div>
+
+        <div class="mt-4 flex items-start text-xs text-gray-500 space-x-2">
+            <input type="checkbox" class="mt-1" checked disabled />
+            <span>
+                By continuing you agree to our
+                <a href="/terms" class="text-green-600 hover:underline">Terms of Use</a> and
+                <a href="/privacy" class="text-green-600 hover:underline">Privacy Policy</a>.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    private Task LoginWithGoogle()
+    {
+        NavManager.NavigateTo("login", forceLoad: true);
+        return Task.CompletedTask;
+    }
+}

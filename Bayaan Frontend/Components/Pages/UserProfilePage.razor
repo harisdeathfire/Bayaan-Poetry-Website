@@ -1,0 +1,211 @@
+﻿@page "/userProfilePage"
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject IGoogleUserLoginService GoogleUserLoginService
+@inject IUserService UserService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavManager
+@layout UserLayout
+@rendermode InteractiveServer
+
+<Banner />
+
+@if (isLoading)
+{
+    <p class="text-gray-500 mt-5 text-center">Loading profile...</p>
+}
+else if (profile == null && fallbackUser == null)
+{
+    <p class="text-gray-500 mt-5 text-center">No profile information found.</p>
+}
+else if (profile == null && fallbackUser != null)
+{
+    <div class="bg-gray-50 p-10 rounded-3xl shadow-2xl border border-gray-200 max-w-2xl w-full transform transition transform hover:shadow-3xl hover:-translate-y-1 ml-auto mr-auto mt-10">
+        <div class="flex flex-col items-center mb-10">
+            <img src="@currentProfilePictureSource"
+                 alt="Profile Image"
+                 class="rounded-full border-4 border-gray-500 w-40 h-40 object-cover shadow-md transform transition transform hover:shadow-2xl hover:scale-105 mb-4" />
+
+            <h4 class="text-2xl font-semibold mt-2">
+                @fallbackUser.userName
+            </h4>
+
+            <p class="text-gray-500 mt-1">
+                Email: @fallbackUser.userEmail
+            </p>
+
+            <div class="flex gap-4 mt-5">
+                <button disabled
+                        class="bg-gray-400 text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md">
+                    Edit Profile
+                </button>
+
+                <button disabled
+                        class="bg-gray-400 text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md">
+                    Change Profile Picture
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                    <strong>Username</strong><br /><span>@fallbackUser.userName</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                    <strong>Email</strong><br /><span>@fallbackUser.userEmail</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="bg-gray-50 p-10 rounded-3xl shadow-2xl border border-gray-200 max-w-2xl w-full transform transition transform hover:shadow-3xl hover:-translate-y-1 ml-auto mr-auto mt-10">
+        <div class="flex flex-col items-center mb-10">
+            <img src="@currentProfilePictureSource"
+                 alt="Profile Image"
+                 class="rounded-full border-4 border-gray-500 w-40 h-40 object-cover shadow-md transform transition transform hover:shadow-2xl hover:scale-105 mb-4" />
+
+            <h4 class="text-2xl font-semibold mt-2">
+                @profile.FirstName @profile.LastName
+            </h4>
+
+            <p class="text-gray-500 mt-1">
+                @profile.City, @profile.Country
+            </p>
+
+            <div class="flex gap-4 mt-5">
+                <button class="bg-gray-900 text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md transform transition transform hover:bg-gray-700 hover:shadow-lg hover:-translate-y-1"
+                        @onclick="EditProfile">
+                    Edit Profile
+                </button>
+
+                <button class="bg-gray-900 text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md transform transition transform hover:bg-gray-700 hover:shadow-lg hover:-translate-y-1"
+                        @onclick="GoToUpdateProfileImage">
+                    Change Profile Picture
+                </button>
+
+                <button class="bg-gray-900 text-gray-50 font-semibold px-4 py-2 rounded-md shadow-md transform transition transform hover:bg-gray-700 hover:shadow-lg hover:-translate-y-1"
+                        @onclick="@GoToHome">
+                    Home
+                </button>
+               
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>First Name</strong><br /><span>@profile.FirstName</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>Last Name</strong><br /><span>@profile.LastName</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>Nickname</strong><br /><span>@profile.NickName</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>Date of Birth</strong><br /><span>@profile.DOB?.ToShortDateString()</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>Phone</strong><br /><span>@profile.PhoneNo</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>City</strong><br /><span>@profile.City</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>Country</strong><br /><span>@profile.Country</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <strong>User Location</strong><br /><span>@profile.UserLocation</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md shadow-md col-span-1 sm:col-span-2">
+                <strong>Description</strong><br /><span>@profile.ShortDescription</span>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private bool isLoading = true;
+    private UserModel profile;
+    private GoogleUserLoginModel fallbackUser;
+
+    private string Username = string.Empty;
+
+    private string currentProfilePictureSource = "/images/default-profile.jpg";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var claimsUser = authState.User;
+
+        if (claimsUser.Identity?.IsAuthenticated ?? false)
+        {
+            var email = claimsUser.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                profile = await UserService.GetProfileByEmail(email);
+
+                if (profile == null)
+                {
+                    var fallback = await GoogleUserLoginService.GetUserLoginByEmail(email);
+
+                    // If fallback also null or missing UID => show error page
+                    if (fallback == null || string.IsNullOrWhiteSpace(fallback.Profile_Id))
+                    {
+                        // Redirect to userform error/info page
+                        NavManager.NavigateTo("/userform", forceLoad: true);
+                        return;
+                    }
+
+                    // Build minimal profile from fallback user
+                    Username = fallback.userName ?? email.Split('@')[0];
+                    profile = new UserModel
+                        {
+                            UId = fallback.Profile_Id,
+                            Email = email,
+                            FirstName = Username
+                        };
+
+                    await UserService.CreateProfile(profile);
+
+                    // Re-fetch to verify
+                    profile = await UserService.GetProfileByEmail(email);
+
+                    // If still null after creation, show error
+                    if (profile == null)
+                    {
+                        NavManager.NavigateTo("/userform", forceLoad: true);
+                        return;
+                    }
+                }
+
+                Username = profile.FirstName ?? email.Split('@')[0];
+
+                currentProfilePictureSource = !string.IsNullOrEmpty(profile.ProfileImageUrl)
+                    ? profile.ProfileImageUrl
+                    : "/images/default-profile.jpg";
+            }
+        }
+
+        isLoading = false;
+    }
+
+
+
+    private void EditProfile()
+    {
+        NavManager.NavigateTo("/updateProfile");
+    }
+
+    private void GoToUpdateProfileImage()
+    {
+        NavManager.NavigateTo("/updateProfileImage");
+    }
+
+    private void GoToHome()
+    {
+        NavManager.NavigateTo("/home");
+    }
+}
+

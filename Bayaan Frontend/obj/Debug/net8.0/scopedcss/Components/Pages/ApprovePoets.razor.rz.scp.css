@@ -1,0 +1,331 @@
+/* Green & White Theme - Poet Approval Page */
+
+/* Main heading styling */
+.text-center.my-4[b-j1p513t0hx] {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 2px 4px rgba(34, 197, 94, 0.1);
+    position: relative;
+}
+
+    .text-center.my-4[b-j1p513t0hx]::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, #22c55e, #16a34a);
+        border-radius: 2px;
+    }
+
+/* Alert styling */
+.alert[b-j1p513t0hx] {
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.alert-danger[b-j1p513t0hx] {
+    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+    color: #dc2626;
+    border-left: 4px solid #ef4444;
+}
+
+.alert-info[b-j1p513t0hx] {
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    color: #16a34a;
+    border-left: 4px solid #22c55e;
+}
+
+/* Loading spinner container */
+.text-center.mt-5[b-j1p513t0hx] {
+    padding: 4rem 0;
+}
+
+.spinner-border.text-primary[b-j1p513t0hx] {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3em;
+    border-color: #22c55e;
+    border-right-color: transparent;
+}
+
+/* Main container for poet cards */
+.bayaan-poet-card-container[b-j1p513t0hx] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Individual poet card */
+.bayaan-poet-card[b-j1p513t0hx] {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+    .bayaan-poet-card[b-j1p513t0hx]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #22c55e, #16a34a, #15803d);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .bayaan-poet-card:hover[b-j1p513t0hx] {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px -10px rgba(34, 197, 94, 0.2), 0 8px 16px -4px rgba(0, 0, 0, 0.1);
+        border-color: rgba(34, 197, 94, 0.2);
+    }
+
+        .bayaan-poet-card:hover[b-j1p513t0hx]::before {
+            transform: scaleX(1);
+        }
+
+/* Profile image styling */
+.bayaan-profile-img[b-j1p513t0hx] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 16px -4px rgba(34, 197, 94, 0.15), 0 0 0 1px rgba(34, 197, 94, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bayaan-poet-card:hover .bayaan-profile-img[b-j1p513t0hx] {
+    transform: scale(1.05);
+    border-color: #22c55e;
+    box-shadow: 0 12px 24px -6px rgba(34, 197, 94, 0.25), 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+/* Nickname/title styling */
+.bayaan-nickname[b-j1p513t0hx] {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Poetry style styling */
+.bayaan-style[b-j1p513t0hx] {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+    .bayaan-style em[b-j1p513t0hx] {
+        color: #16a34a;
+        font-weight: 600;
+        font-style: normal;
+        background: rgba(34, 197, 94, 0.1);
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+    }
+
+/* Biography styling */
+.bayaan-bio[b-j1p513t0hx] {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    background: rgba(248, 250, 252, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid #22c55e;
+}
+
+/* Date styling */
+.bayaan-date[b-j1p513t0hx] {
+    font-size: 0.9rem;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    background: rgba(34, 197, 94, 0.05);
+    border-radius: 8px;
+}
+
+    .bayaan-date strong[b-j1p513t0hx] {
+        color: #16a34a;
+        font-weight: 600;
+    }
+
+/* Actions container */
+.bayaan-actions[b-j1p513t0hx] {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Approve button styling */
+.bayaan-approve-btn[b-j1p513t0hx] {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+    .bayaan-approve-btn[b-j1p513t0hx]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .bayaan-approve-btn:hover[b-j1p513t0hx] {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        background: linear-gradient(135deg, #16a34a, #15803d);
+    }
+
+        .bayaan-approve-btn:hover[b-j1p513t0hx]::before {
+            left: 100%;
+        }
+
+    .bayaan-approve-btn:active[b-j1p513t0hx] {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bayaan-poet-card-container[b-j1p513t0hx] {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .bayaan-poet-card[b-j1p513t0hx] {
+        padding: 1.5rem;
+    }
+
+    .text-center.my-4[b-j1p513t0hx] {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .bayaan-profile-img[b-j1p513t0hx] {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bayaan-nickname[b-j1p513t0hx] {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bayaan-poet-card[b-j1p513t0hx] {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .text-center.my-4[b-j1p513t0hx] {
+        font-size: 1.75rem;
+    }
+
+    .bayaan-approve-btn[b-j1p513t0hx] {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Accessibility improvements */
+.bayaan-approve-btn:focus[b-j1p513t0hx] {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bayaan-poet-card[b-j1p513t0hx],
+    .bayaan-profile-img[b-j1p513t0hx],
+    .bayaan-approve-btn[b-j1p513t0hx] {
+        transition: none;
+    }
+
+        .bayaan-poet-card:hover[b-j1p513t0hx] {
+            transform: none;
+        }
+}
+
+/* Loading state animation */
+@keyframes fadeIn-b-j1p513t0hx {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bayaan-poet-card[b-j1p513t0hx] {
+    animation: fadeIn-b-j1p513t0hx 0.6s ease-out;
+}
+
+    .bayaan-poet-card:nth-child(2)[b-j1p513t0hx] {
+        animation-delay: 0.1s;
+    }
+
+    .bayaan-poet-card:nth-child(3)[b-j1p513t0hx] {
+        animation-delay: 0.2s;
+    }
+
+    .bayaan-poet-card:nth-child(4)[b-j1p513t0hx] {
+        animation-delay: 0.3s;
+    }
+
+    .bayaan-poet-card:nth-child(5)[b-j1p513t0hx] {
+        animation-delay: 0.4s;
+    }
+
+    .bayaan-poet-card:nth-child(6)[b-j1p513t0hx] {
+        animation-delay: 0.5s;
+    }

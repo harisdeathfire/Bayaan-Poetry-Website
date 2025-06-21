@@ -1,0 +1,86 @@
+﻿@page "/admin/search-ghazals-poet"
+@using Microsoft.AspNetCore.Authorization
+@using Newtonsoft.Json
+@using Repo.IServices
+@inject IGhazalService GhazalService
+@attribute [Authorize(Roles = "Admin")]
+@rendermode InteractiveServer
+
+<h2 class="text-4xl font-semibold mb-6 custom-heading">Search Ghazals by Poet ID or Nickname</h2>
+<hr class="mb-6 custom-divider" />
+
+<div class="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-300">
+    <input @bind="searchPoetId"
+           @bind:event="oninput"
+           class="input mr-2 p-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+           placeholder="Enter poet ID…" />
+
+    <input @bind="searchNickname"
+           @bind:event="oninput"
+           class="input mr-2 p-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+           placeholder="Enter nickname…" />
+
+    <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-md shadow-md mt-4"
+            @onclick="SearchGhazals">
+        Search Ghazals
+    </button>
+</div>
+
+@if (isSearching)
+{
+    <p class="text-gray-500 mt-4">Searching...</p>
+}
+else if (ghazals == null)
+{
+    <p class="text-gray-500 mt-4">Enter a Poet ID or Nickname to search for ghazals.</p>
+}
+else if (ghazals.Count == 0)
+{
+    <p class="text-gray-500 mt-4">No ghazals found.</p>
+}
+else
+{
+    <ul class="bg-gray-50 p-6 rounded-lg shadow-md mt-4 space-y-6">
+        @foreach (var ghazal in ghazals)
+        {
+            <li class="p-6 rounded-md border border-gray-300 shadow-md bg-white hover:bg-gray-100 transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="@(!string.IsNullOrWhiteSpace(ghazal.ProfileImageUrl) ? ghazal.ProfileImageUrl : "/images/default-profile.png")"
+                         alt="Profile"
+                         class="w-16 h-16 rounded-full object-cover border border-gray-400 shadow" />
+
+                    <div>
+                        <h3 class="text-lg font-bold">@ghazal.PoetNickname</h3>
+                        <p class="text-sm italic text-gray-600">Style: @ghazal.PoetryStyle</p>
+                        <p class="text-sm text-gray-700">@ghazal.Biography</p>
+                    </div>
+                </div>
+
+                <h4 class="text-xl font-semibold mb-1">@ghazal.Title</h4>
+                <p class="text-sm text-gray-500 mb-2"><strong>Created At:</strong> @ghazal.CreatedAt.ToString("dd MMM yyyy")</p>
+                <p class="text-sm text-gray-500"><strong>PoetId:</strong> @ghazal.PoetId</p>
+
+                <div class="mt-4">
+                    <strong class="text-sm text-gray-800">Ghazal Text (JSON):</strong>
+                    <pre class="bg-gray-900 text-green-400 p-2 rounded mt-2 overflow-auto text-sm">
+                        @JsonConvert.SerializeObject(JsonConvert.DeserializeObject(ghazal.GhazalJson), Formatting.Indented)
+                            </pre>
+                </div>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private string searchPoetId = string.Empty;
+    private string searchNickname = string.Empty;
+    private bool isSearching = false;
+    private List<GhazalModel> ghazals;
+
+    private async Task SearchGhazals()
+    {
+        isSearching = true;
+        ghazals = await GhazalService.GetGhazalsByPoetIdOrNickname(searchPoetId, searchNickname);
+        isSearching = false;
+    }
+}

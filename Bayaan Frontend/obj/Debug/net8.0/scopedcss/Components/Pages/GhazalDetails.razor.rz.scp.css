@@ -1,0 +1,363 @@
+/* Enhanced Aesthetic Modal Styles */
+.custom-modal .modal-content[b-yfox7os5lw] {
+    background: linear-gradient(145deg, #0a2818, #0f3d29, #1a4d3a);
+    border-radius: 2rem;
+    color: #ffffff;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: modalSlideIn-b-yfox7os5lw 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(209, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Decorative overlay */
+    .custom-modal .modal-content[b-yfox7os5lw]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 20% 80%, rgba(209, 175, 55, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(25, 135, 84, 0.1) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: 1;
+    }
+
+.modal-header[b-yfox7os5lw] {
+    background: linear-gradient(135deg, #1a4d3a, #0f3d29, #2d5a47);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 2rem 2.5rem 1.5rem;
+    color: #ffffff;
+    text-align: right;
+    border-bottom: 2px solid rgba(209, 175, 55, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+    /* Decorative pattern for header */
+    .modal-header[b-yfox7os5lw]::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, transparent 0%, #d4af37 20%, #f4d03f 50%, #d4af37 80%, transparent 100%);
+        box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+.modal-title[b-yfox7os5lw] {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+    font-size: 2.2rem;
+    color: #f8f9fa;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+    animation: titleGlow-b-yfox7os5lw 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow-b-yfox7os5lw {
+    from {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    to {
+        text-shadow: 0 0 15px rgba(212, 175, 55, 1), 0 0 30px rgba(212, 175, 55, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.modal-body[b-yfox7os5lw] {
+    padding: 2.5rem;
+    max-height: 65vh;
+    overflow-y: auto;
+    direction: rtl;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+    /* Enhanced scrollbar */
+    .modal-body[b-yfox7os5lw]::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .modal-body[b-yfox7os5lw]::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+
+    .modal-body[b-yfox7os5lw]::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #d4af37, #f4d03f);
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    }
+
+        .modal-body[b-yfox7os5lw]::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #f4d03f, #d4af37);
+        }
+
+.modal-footer[b-yfox7os5lw] {
+    background: linear-gradient(135deg, #1a4d3a, #0f3d29);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top: 2px solid rgba(209, 175, 55, 0.3);
+    padding: 1.5rem 2.5rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Close button enhancement */
+.btn-close-white[b-yfox7os5lw] {
+    
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color:aliceblue;
+    backdrop-filter: blur(10px);
+}
+
+    .btn-close-white:hover[b-yfox7os5lw] {
+        opacity: 1;
+        background: white;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        transform: scale(1.1);
+    }
+
+/* Enhanced button styles */
+.btn-secondary[b-yfox7os5lw] {
+    background: linear-gradient(145deg, #198754, #20a65a);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(25, 135, 84, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+    .btn-secondary:hover[b-yfox7os5lw] {
+        background: linear-gradient(145deg, #20a65a, #198754);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(25, 135, 84, 0.4);
+        color: white;
+    }
+
+.btn-danger[b-yfox7os5lw] {
+    background: linear-gradient(145deg, #dc3545, #c82333);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+    .btn-danger:hover[b-yfox7os5lw] {
+        background: linear-gradient(145deg, #c82333, #dc3545);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+        color: white;
+    }
+
+/* Urdu text enhancement */
+.urdu-line[b-yfox7os5lw] {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6), 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+    .urdu-line:hover[b-yfox7os5lw] {
+        text-shadow: 0 0 12px rgba(212, 175, 55, 0.8), 0 2px 4px rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+    }
+
+/* Enhanced blockquote */
+blockquote[b-yfox7os5lw] {
+    border-right: 4px solid transparent;
+    border-image: linear-gradient(45deg, #d4af37, #f4d03f, #d4af37) 1;
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    margin: 0 0 2rem;
+    animation: fadeUp-b-yfox7os5lw 0.8s ease forwards;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0 1rem 1rem 0;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+    blockquote[b-yfox7os5lw]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(45deg, #d4af37, #f4d03f, #d4af37);
+        box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+    blockquote:hover[b-yfox7os5lw] {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateX(-5px);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Enhanced backdrop */
+.modal-backdrop[b-yfox7os5lw] {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.7);
+    animation: backdropFade-b-yfox7os5lw 0.5s ease-in-out;
+}
+
+@keyframes backdropFade-b-yfox7os5lw {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Enhanced animations */
+@keyframes modalSlideIn-b-yfox7os5lw {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeUp-b-yfox7os5lw {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alert enhancement */
+.alert[b-yfox7os5lw] {
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: alertSlide-b-yfox7os5lw 0.5s ease-in-out;
+}
+
+@keyframes alertSlide-b-yfox7os5lw {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-success[b-yfox7os5lw] {
+    background: linear-gradient(145deg, rgba(25, 135, 84, 0.9), rgba(32, 166, 90, 0.9));
+    color: white;
+    border-color: rgba(25, 135, 84, 0.5);
+}
+
+.alert-danger[b-yfox7os5lw] {
+    background: linear-gradient(145deg, rgba(220, 53, 69, 0.9), rgba(200, 35, 51, 0.9));
+    color: white;
+    border-color: rgba(220, 53, 69, 0.5);
+}
+
+/* Loading spinner enhancement */
+.spinner-border[b-yfox7os5lw] {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3em;
+    animation: spin 1s linear infinite, pulse-b-yfox7os5lw 2s ease-in-out infinite;
+}
+
+@keyframes pulse-b-yfox7os5lw {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-title[b-yfox7os5lw] {
+        font-size: 1.8rem;
+    }
+
+    .urdu-line[b-yfox7os5lw] {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .modal-header[b-yfox7os5lw],
+    .modal-body[b-yfox7os5lw],
+    .modal-footer[b-yfox7os5lw] {
+        padding: 1.5rem;
+    }
+
+    .custom-modal .modal-content[b-yfox7os5lw] {
+        border-radius: 1.5rem;
+        margin: 1rem;
+    }
+}
+
+/* Elegant hover effects for interactive elements */
+button[b-yfox7os5lw], .btn[b-yfox7os5lw] {
+    position: relative;
+    overflow: hidden;
+}
+
+    button[b-yfox7os5lw]::before, .btn[b-yfox7os5lw]::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    button:hover[b-yfox7os5lw]::before, .btn:hover[b-yfox7os5lw]::before {
+        width: 300px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+    }
+
+    button span[b-yfox7os5lw], .btn span[b-yfox7os5lw], button i[b-yfox7os5lw], .btn i[b-yfox7os5lw] {
+        position: relative;
+        z-index: 1;
+    }

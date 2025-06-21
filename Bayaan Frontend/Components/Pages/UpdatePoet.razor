@@ -1,0 +1,100 @@
+﻿@page "/update-poet"
+@inject IPoetService PoetService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
+@layout UserLayout
+@inject NavigationManager NavManager
+
+
+<div class="form-container">
+    <h2 class="form-title">Update Your Poet Profile</h2>
+
+    @if (poet == null)
+    {
+        <p class="loading-text">Loading...</p>
+    }
+    else
+    {
+        <EditForm Model="poet" OnValidSubmit="UpdatePoetAsync" FormName="updatePoetModel" class="poet-form">
+            <DataAnnotationsValidator />
+
+            @* Custom styled validation summary *@
+            <div class="validation-errors @(context.GetValidationMessages().Any() ? "" : "d-none")">
+                <ValidationSummary />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="nickname">Nickname</label>
+                <InputText id="nickname"
+                           class="form-control"
+                           @bind-Value="poet.NickName"
+                           placeholder="Enter your poet nickname" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="poetryStyle">Poetry Style</label>
+                <InputText id="poetryStyle"
+                           class="form-control"
+                           @bind-Value="poet.PoetryStyle"
+                           placeholder="e.g., Romantic, Modern, Classical" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="biography">Biography</label>
+                <InputTextArea id="biography"
+                               class="form-control"
+                               @bind-Value="poet.Biography"
+                               placeholder="Tell us about your journey as a poet..." />
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span>Update Profile</span>
+            </button>
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(statusMessage))
+        {
+            <div class="status-message">@statusMessage</div>
+        }
+    }
+</div>
+
+
+
+
+
+@code {
+    @code {
+        private PoetModel poet;
+        private string statusMessage;
+
+        protected override async Task OnInitializedAsync()
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity.IsAuthenticated)
+            {
+                // ✅ Correct way to extract email from claims
+                var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
+
+                if (!string.IsNullOrEmpty(email))
+                {
+                    poet = await PoetService.GetPoetByEmailAsync(email);
+                }
+            }
+        }
+
+        private async Task UpdatePoetAsync()
+        {
+            await PoetService.UpdatePoetAsync(poet);
+            statusMessage = "Poet profile updated successfully!";
+
+            await Task.Delay(1000);
+
+            NavManager.NavigateTo("/view-poetdata");
+        }
+    }
+
+}
+

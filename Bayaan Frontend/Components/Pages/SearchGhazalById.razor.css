@@ -1,0 +1,391 @@
+﻿ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 50%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Custom Heading Styles */
+        .custom-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #2d5016, #4a7c25, #6ea043);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .custom-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #4a7c25, #6ea043);
+            border-radius: 2px;
+        }
+        
+        /* Custom Divider */
+        .custom-divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #6ea043, transparent);
+            margin: 2rem 0;
+            opacity: 0.6;
+        }
+        
+        /* Search Container */
+        .search-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(110, 160, 67, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 
+                0 8px 32px rgba(110, 160, 67, 0.1),
+                0 4px 16px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .search-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a7c25, #6ea043, #8bc34a, #6ea043, #4a7c25);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        /* Input Styles */
+        .input {
+            width: 100%;
+            max-width: 300px;
+            padding: 12px 20px;
+            margin: 0.5rem;
+            border: 2px solid rgba(110, 160, 67, 0.3);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .input:focus {
+            outline: none;
+            border-color: #6ea043;
+            box-shadow: 
+                0 0 0 3px rgba(110, 160, 67, 0.2),
+                0 4px 12px rgba(110, 160, 67, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .input::placeholder {
+            color: #7a8471;
+            font-weight: 300;
+        }
+        
+        /* Button Styles */
+        .search-button {
+            background: linear-gradient(135deg, #4a7c25, #6ea043);
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+            box-shadow: 0 4px 15px rgba(110, 160, 67, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .search-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .search-button:hover::before {
+            left: 100%;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(110, 160, 67, 0.4);
+        }
+        
+        .search-button:active {
+            transform: translateY(-1px);
+        }
+        
+        /* Status Messages */
+        .status-message {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.1rem;
+            color: #5a6b47;
+            font-weight: 300;
+        }
+        
+        .searching {
+            color: #6ea043;
+            position: relative;
+        }
+        
+        .searching::after {
+            content: '...';
+            animation: dots 1.5s infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+        
+        /* Results Container */
+        .results-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(110, 160, 67, 0.2);
+            box-shadow: 0 8px 32px rgba(110, 160, 67, 0.1);
+        }
+        
+        /* Ghazal Card Styles */
+        .ghazal-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 252, 248, 0.95));
+            border: 2px solid rgba(110, 160, 67, 0.15);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ghazal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(110, 160, 67, 0.02), rgba(74, 124, 37, 0.02));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .ghazal-card:hover::before {
+            opacity: 1;
+        }
+        
+        .ghazal-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(110, 160, 67, 0.3);
+            box-shadow: 
+                0 12px 40px rgba(110, 160, 67, 0.15),
+                0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(110, 160, 67, 0.1);
+        }
+        
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(110, 160, 67, 0.3);
+            box-shadow: 0 4px 12px rgba(110, 160, 67, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: #6ea043;
+        }
+        
+        .profile-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d5016;
+            margin-bottom: 0.5rem;
+        }
+        
+        .poetry-style {
+            color: #6ea043;
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .biography {
+            color: #5a6b47;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        /* Ghazal Content */
+        .ghazal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #2d5016;
+            margin-bottom: 1rem;
+        }
+        
+        .ghazal-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #7a8471;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .meta-label {
+            font-weight: 600;
+            color: #5a6b47;
+        }
+        
+        /* JSON Display */
+        .json-section {
+            margin-top: 2rem;
+        }
+        
+        .json-label {
+            font-weight: 600;
+            color: #2d5016;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .json-display {
+            background: linear-gradient(135deg, #1a2f1a, #2d4a2d);
+            color: #90ee90;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            overflow-x: auto;
+            border: 2px solid rgba(110, 160, 67, 0.3);
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .json-display::before {
+            content: 'JSON';
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            color: rgba(144, 238, 144, 0.6);
+            font-weight: bold;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .custom-heading {
+                font-size: 2rem;
+            }
+            
+            .search-container {
+                padding: 1.5rem;
+            }
+            
+            .input {
+                max-width: 100%;
+                margin: 0.25rem 0;
+            }
+            
+            .search-button {
+                width: 100%;
+                margin: 1rem 0 0 0;
+            }
+            
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .ghazal-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
+        /* Decorative Elements */
+        .leaf-decoration {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(110, 160, 67, 0.1);
+            border-radius: 0 100% 0 100%;
+            transform: rotate(45deg);
+        }
+        
+        .search-container .leaf-decoration:nth-child(1) {
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .search-container .leaf-decoration:nth-child(2) {
+            bottom: 1rem;
+            left: 1rem;
+            transform: rotate(-135deg);
+        }

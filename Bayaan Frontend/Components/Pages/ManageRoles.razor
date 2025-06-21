@@ -1,0 +1,154 @@
+﻿@page "/admin/manage-roles"
+@using Microsoft.AspNetCore.Authorization
+@inject IUserService UserService
+@inject IPoetService PoetService
+@attribute [Authorize(Roles = "Admin")]
+@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+<h2 class="text-3xl font-semibold mb-6 mt-2">Manage User Roles</h2>
+
+<hr class="mb-6" />
+
+<div class="search-box mb-4">
+    <input @bind="searchEmail"
+           @bind:event="oninput"
+           class="input mr-2 p-2 border rounded shadow-md"
+           placeholder="Enter user's email…" />
+
+    <button class="bg-blue-500 hover:bg-blue-600 text-gray-50 font-semibold px-4 py-2 rounded shadow-md mr-2 transform hover:translate-y-[-2px] transition ease-in-out"
+            @onclick="SearchUser">
+        Search User
+    </button>
+</div>
+
+@if (isSearching)
+{
+    <p>Searching...</p>
+}
+else if (foundUser == null && !string.IsNullOrEmpty(searchEmail))
+{
+    <p>User not found</p>
+}
+else if (foundUser is not null)
+{
+    <div class="bg-gray-100 p-4 rounded shadow-md transform hover:translate-y-[-5px] transition ease-in-out">
+        <img src="@foundUser.ProfileImageUrl" alt="@foundUser.FirstName" class="rounded-full w-32 h-32 mr-4 float-left border-4 border-gray-300 shadow-md" />
+
+        <h3 class="text-2xl font-semibold mt-0">@foundUser.FirstName @foundUser.LastName</h3>
+
+        <p><strong>Nickname:</strong> @foundUser.NickName</p>
+        <p><strong>Date of Birth:</strong> @foundUser.DOB?.ToShortDateString()</p>
+        <p><strong>Email:</strong> @foundUser.Email</p>
+        <p><strong>City:</strong> @foundUser.City</p>
+        <p><strong>Country:</strong> @foundUser.Country</p>
+        <p><strong>Description:</strong> @foundUser.ShortDescription</p>
+        <p><strong>Current Role:</strong> @foundUser.Role</p>
+
+        <button class="bg-green-500 hover:bg-green-600 text-gray-50 font-semibold px-4 py-2 rounded shadow-md mt-4 transform hover:translate-y-[-2px] transition ease-in-out"
+                @onclick="PromoteToPoet">
+            Promote to Poet
+        </button>
+
+        
+        <button class="bg-red-500 hover:bg-red-600 text-gray-50 font-semibold px-4 py-2 rounded shadow-md mt-2 ml-4 transform hover:translate-y-[-2px] transition ease-in-out"
+                @onclick="DemoteToUser">
+            Demote to User
+        </button>
+
+        @if (!string.IsNullOrEmpty(infoMessage))
+        {
+            <div class="mt-4 text-red-600 font-semibold">
+                @infoMessage
+            </div>
+        }
+    </div>
+}
+
+@if (showSuccessModal)
+{
+    <div class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div class="bg-gray-50 p-6 rounded shadow-md transform translate-y-0 transition ease-in-out">
+            <h4 class="text-2xl font-semibold">Success</h4>
+            <p>User role updated successfully.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-gray-50 font-semibold px-4 py-2 rounded ml-2 shadow-md transform hover:translate-y-[-2px] transition ease-in-out mt-4"
+                    @onclick="CloseModal">
+                Close
+            </button>
+        </div>
+    </div>
+}
+
+@code {
+    private string searchEmail = string.Empty;
+    private UserModel? foundUser;
+    private bool isSearching = false;
+    private bool showSuccessModal = false;
+    private string infoMessage = string.Empty;
+
+    private async Task SearchUser()
+    {
+        isSearching = true;
+        infoMessage = string.Empty;
+
+        foundUser = await UserService.GetProfileByEmail(searchEmail);
+
+        isSearching = false;
+    }
+
+    private async Task PromoteToPoet()
+    {
+        if (foundUser == null) return;
+
+        if (foundUser.Role?.ToLower() == "poet")
+        {
+            infoMessage = "User is already a poet.";
+            return;
+        }
+
+        try
+        {
+            await PoetService.UpdateUserRoleToPoetAsync(foundUser.UId);
+            showSuccessModal = true;
+
+            // Refresh user info
+            foundUser = await UserService.GetProfileByEmail(searchEmail);
+            infoMessage = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeAsync<object>("alert", $"Failed to update role: {ex.Message}");
+        }
+    }
+
+    private void CloseModal()
+    {
+        showSuccessModal = false;
+    }
+
+    private async Task DemoteToUser()
+    {
+        if (foundUser == null) return;
+
+        if (foundUser.Role?.ToLower() == "user")
+        {
+            infoMessage = "User is already in 'User' role.";
+            return;
+        }
+
+        try
+        {
+            await PoetService.UpdateUserRoleToUserAsync(foundUser.UId);
+            showSuccessModal = true;
+
+            // Refresh user info
+            foundUser = await UserService.GetProfileByEmail(searchEmail);
+            infoMessage = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeAsync<object>("alert", $"Failed to update role: {ex.Message}");
+        }
+    }
+
+}

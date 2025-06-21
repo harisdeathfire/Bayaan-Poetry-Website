@@ -1,0 +1,85 @@
+.poet-section[b-7pf2lc6m18] {
+    background-color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+.section-title[b-7pf2lc6m18] {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.7rem;
+    color: #198754;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.poet-card[b-7pf2lc6m18] {
+    background: #ffffff;
+    border: 1px solid #19875440;
+    border-radius: 18px;
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+}
+
+    .poet-card:hover[b-7pf2lc6m18] {
+        transform: translateY(-8px);
+        border-color: #198754;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+.poet-img[b-7pf2lc6m18] {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #198754;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto 1.5rem; 
+}
+
+.poet-name[b-7pf2lc6m18] {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #198754;
+}
+
+.poet-desc[b-7pf2lc6m18] {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.btn-outline-success[b-7pf2lc6m18] {
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+    .btn-outline-success:hover[b-7pf2lc6m18] {
+        background-color: #198754;
+        color: white;
+        border-color: #198754;
+    }
+/* Fade-in Animation */
+@keyframes fadeInUp-b-7pf2lc6m18 {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in[b-7pf2lc6m18] {
+    animation: fadeInUp-b-7pf2lc6m18 1s ease forwards;
+    opacity: 0; /* ensures the animation starts hidden */
+}

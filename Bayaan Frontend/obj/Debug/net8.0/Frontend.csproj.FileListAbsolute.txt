@@ -1,0 +1,855 @@
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.pdb
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.pdb
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.sourcelink.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\User.razor.rz.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.pdb
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Humanizer.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfile.razor.rz.scp.css
+C:\Users\haris\source\repos\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserNavbar.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.Development.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.exe
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.deps.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.pdb
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Core.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Identity.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Humanizer.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Mono.TextTemplating.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.ClientModel.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.CodeDom.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Convention.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Hosting.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Runtime.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Memory.Data.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.pdb
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.pdb
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.pdb
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.AssemblyReference.cache
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserNavbar.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\User.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfile.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\refint\Frontend.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.pdb
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\EditUserProfile.razor.rz.scp.css
+J:\IDE\Rider Projects\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfilePage.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Humanizer.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.pdb
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.pdb
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.pdb
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.sourcelink.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserNavbar.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\EditUserProfile.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\User.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfile.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfilePage.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\haris\Downloads\FYP Project\FYP Project\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Humanizer.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Entities.pdb
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\Repo.pdb
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\bin\Debug\net8.0\DAL.pdb
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.sourcelink.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserNavbar.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\EditUserProfile.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\User.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfile.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfilePage.razor.rz.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\haris\Downloads\FYP Project\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.exe
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.deps.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Humanizer.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\DAL.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Entities.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Repo.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Entities.pdb
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Repo.pdb
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\DAL.pdb
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.AssemblyInfo.cs
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.sourcelink.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserProfilePage.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\refint\Frontend.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.pdb
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserLayout.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\Footer.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\TopNav.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\BlogSection.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\FeaturedShayari.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\HeroSection.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\PoetSection.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\LoginGoogle.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\ManageUser.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\SearchUser.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\ViewGhazals.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\GhazalDetails.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Additionaldata.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\AddGhazal.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\SearchGhazal.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\AllPoetsView.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\ApprovePoets.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\UserDashboard.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\PoetDashboard.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UpdateProfileImage.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UserErrorDisplay.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\AdminDashboard.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Blog.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\AboutUs.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\SearchPoetry.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\SearchGhazalById.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\ViewPoet.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\UpdatePoet.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Layout\Testimonial.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project (Ammar)\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\ApproveTestimonials.razor.rz.scp.css
