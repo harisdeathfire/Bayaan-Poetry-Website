@@ -9,221 +9,221 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bayaan Frontend
 build_property.RootNamespace = Bayaan Frontend
-build_property.ProjectDir = C:\Users\haris\Documents\FYP Project\Bayaan Frontend\
+build_property.ProjectDir = C:\Users\haris\Downloads\Bayaan Project\Bayaan Frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\haris\Documents\FYP Project\Bayaan Frontend
+build_property.MSBuildProjectDirectory = C:\Users\haris\Downloads\Bayaan Project\Bayaan Frontend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Authentication/AccessDeniedPage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Authentication/AccessDeniedPage.razor]
 build_metadata.AdditionalFiles.TargetPath = QXV0aGVudGljYXRpb25cQWNjZXNzRGVuaWVkUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Authentication/AfterLoginPage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Authentication/AfterLoginPage.razor]
 build_metadata.AdditionalFiles.TargetPath = QXV0aGVudGljYXRpb25cQWZ0ZXJMb2dpblBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Authentication/LoginPage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Authentication/LoginPage.razor]
 build_metadata.AdditionalFiles.TargetPath = QXV0aGVudGljYXRpb25cTG9naW5QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Authentication/LogoutPage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Authentication/LogoutPage.razor]
 build_metadata.AdditionalFiles.TargetPath = QXV0aGVudGljYXRpb25cTG9nb3V0UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/App.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/Banner.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/Banner.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQmFubmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/EmptyLayout.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/EmptyLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRW1wdHlMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/BecomeAPoet.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/BecomeAPoet.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCZWNvbWVBUG9ldC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Counter.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Error.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/LandingPage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/LandingPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMYW5kaW5nUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ManageRoles.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ManageRoles.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VSb2xlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/PoetGhazals.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/PoetGhazals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQb2V0R2hhemFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/UpdateProfile.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/UpdateProfile.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGRhdGVQcm9maWxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Weather.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Routes.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/_Imports.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/AdminDashboard.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/AdminDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQWRtaW5EYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-o9ch1x24on
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/BlogSection.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/BlogSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQmxvZ1NlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fxv60sch0x
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/FeaturedShayari.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/FeaturedShayari.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRmVhdHVyZWRTaGF5YXJpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-9iz9663zn9
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/Footer.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-r18uqbujto
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/HeroSection.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/HeroSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSGVyb1NlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-37ehofhow9
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/MainLayout.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-cj3fj28uav
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/NavMenu.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ftcrkoicqg
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/PoetDashboard.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/PoetDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUG9ldERhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-hbjoanoudh
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/PoetSection.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/PoetSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUG9ldFNlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7pf2lc6m18
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/Testimonial.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/Testimonial.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVGVzdGltb25pYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-amy8tvite4
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/TopNav.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/TopNav.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTmF2LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-2cuzm3ebix
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/UserDashboard.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/UserDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlckRhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-2w38hhre8p
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Layout/UserLayout.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Layout/UserLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlckxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-cjeuok0t4j
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/AboutUs.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/AboutUs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-l5xhao8c8b
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/AddGhazal.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/AddGhazal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRHaGF6YWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pbl0j7o9a2
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Additionaldata.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Additionaldata.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRpdGlvbmFsZGF0YS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-oaqol22soe
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/AllPoetsView.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/AllPoetsView.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbGxQb2V0c1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-lu1nbmqelx
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ApprovePoets.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ApprovePoets.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHByb3ZlUG9ldHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-j1p513t0hx
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ApproveTestimonials.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ApproveTestimonials.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHByb3ZlVGVzdGltb25pYWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-cx94xee3km
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Blog.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Blog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-pi22mqtdla
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/GhazalDetails.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/GhazalDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHaGF6YWxEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-yfox7os5lw
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/Home.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ki5ckatzno
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/LoginGoogle.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/LoginGoogle.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbkdvb2dsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-cxgowf4qxt
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ManageUser.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ManageUser.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-7r9fljht1j
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/SearchGhazal.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/SearchGhazal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWFyY2hHaGF6YWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5bsxk8ktou
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/SearchGhazalById.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/SearchGhazalById.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWFyY2hHaGF6YWxCeUlkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-se0z36myc1
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/SearchPoetry.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/SearchPoetry.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWFyY2hQb2V0cnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-8kmnr201xz
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/SearchUser.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/SearchUser.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWFyY2hVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-nf7ihq2mmo
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/SubmitTestimonial.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/SubmitTestimonial.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdWJtaXRUZXN0aW1vbmlhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-i1n9ov2394
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/UpdatePoet.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/UpdatePoet.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGRhdGVQb2V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-wbvo3xep5a
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/UpdateProfileImage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/UpdateProfileImage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGRhdGVQcm9maWxlSW1hZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-w10jj3tlcm
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/UserErrorDisplay.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/UserErrorDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyRXJyb3JEaXNwbGF5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-1y42098v6r
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/UserProfilePage.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/UserProfilePage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyUHJvZmlsZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-bjrsciwr40
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ViewGhazals.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ViewGhazals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3R2hhemFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-tqhcem20wc
 
-[C:/Users/haris/Documents/FYP Project/Bayaan Frontend/Components/Pages/ViewPoet.razor]
+[C:/Users/haris/Downloads/Bayaan Project/Bayaan Frontend/Components/Pages/ViewPoet.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3UG9ldC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ktgh1vwia7

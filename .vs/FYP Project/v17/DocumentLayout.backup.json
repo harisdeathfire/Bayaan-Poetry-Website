@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\haris\\Documents\\FYP Project\\",
+  "WorkspaceRootPath": "C:\\Users\\haris\\Documents\\Bayaan Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|c:\\users\\haris\\documents\\fyp project\\bayaan frontend\\components\\pages\\submittestimonial.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|c:\\users\\haris\\documents\\bayaan project\\bayaan frontend\\components\\pages\\submittestimonial.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|solutionrelative:bayaan frontend\\components\\pages\\submittestimonial.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|c:\\users\\haris\\documents\\fyp project\\bayaan frontend\\components\\pages\\submittestimonial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|c:\\users\\haris\\documents\\bayaan project\\bayaan frontend\\components\\pages\\submittestimonial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E0D4A013-1CF4-45BC-9B2D-B82B1595D8CC}|Bayaan Frontend\\Frontend.csproj|solutionrelative:bayaan frontend\\components\\pages\\submittestimonial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SubmitTestimonial.razor.css",
-              "DocumentMoniker": "C:\\Users\\haris\\Documents\\FYP Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
+              "DocumentMoniker": "C:\\Users\\haris\\Documents\\Bayaan Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
               "RelativeDocumentMoniker": "Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
-              "ToolTip": "C:\\Users\\haris\\Documents\\FYP Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
+              "ToolTip": "C:\\Users\\haris\\Documents\\Bayaan Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
               "RelativeToolTip": "Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor.css",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAANEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAANEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-21T07:14:11.169Z",
               "EditorCaption": ""
@@ -45,9 +45,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SubmitTestimonial.razor",
-              "DocumentMoniker": "C:\\Users\\haris\\Documents\\FYP Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
+              "DocumentMoniker": "C:\\Users\\haris\\Documents\\Bayaan Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
               "RelativeDocumentMoniker": "Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
-              "ToolTip": "C:\\Users\\haris\\Documents\\FYP Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
+              "ToolTip": "C:\\Users\\haris\\Documents\\Bayaan Project\\Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
               "RelativeToolTip": "Bayaan Frontend\\Components\\Pages\\SubmitTestimonial.razor",
               "ViewState": "AgIAABsAAAAAAAAAAAAiwCUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
