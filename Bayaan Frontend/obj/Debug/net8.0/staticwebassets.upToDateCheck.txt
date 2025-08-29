@@ -24,6 +24,10 @@ wwwroot\images\profiles\95f18cb7-e14c-4010-86ad-fb9227aa9da1.jpg
 wwwroot\images\qawal night.jpg
 wwwroot\images\raed-kasrwani-RDeeIFfDTi8-unsplash.jpg
 wwwroot\images\testimonials\87b9f10c-6868-4959-8daf-c70b4e224f92.jpg
+wwwroot\images\testimonials\bd4b4c4c-91f3-42d3-8fa7-63a53873e862.jpg
+wwwroot\images\testimonials\d0d7f9c6-2ba4-47e0-a95f-2132438459f7.jpg
+wwwroot\images\testimonials\e48b46a7-82b6-447e-8f2f-92501e25a5d7.jpg
+wwwroot\images\testimonials\f5a0c23c-cf9a-4c5a-a74c-9a22269516fb.jpg
 wwwroot\images\twitter.jpeg
 wwwroot\images\users\0fa7cdb7-9b8a-4543-a223-59b2eba76848.jpg
 wwwroot\images\users\118871c4-034a-4d17-83d1-f860552f92ab.jpg
@@ -40,6 +44,7 @@ wwwroot\images\users\376ace42-c38c-4c8d-a5c0-1f33a26f58de.jpg
 wwwroot\images\users\37e6a03a-916b-4bd7-896f-8cf1b3dd725e.jpg
 wwwroot\images\users\38b3c30e-011a-4c9e-a0a8-6c4b1fdb4554.jpg
 wwwroot\images\users\42168a2f-ae8e-436e-9d45-21c5968c89e0.jpg
+wwwroot\images\users\4410f467-73d5-4fbd-ac39-4a3a0864bed9.jpg
 wwwroot\images\users\46fd1bcc-6365-44c2-ad16-37b7f5042ac2.jpg
 wwwroot\images\users\482ce36e-6249-458b-b628-ade929d447f5.jpg
 wwwroot\images\users\4b94a9e2-32d7-4c79-9258-e0e527c4d746.jpg

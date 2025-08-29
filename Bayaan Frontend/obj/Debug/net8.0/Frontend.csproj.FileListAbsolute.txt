@@ -1034,12 +1034,6 @@ C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
-C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.csproj.Up2Date
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.dll
@@ -1048,3 +1042,8 @@ C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.p
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\Frontend.genruntimeconfig.cache
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\ref\Frontend.dll
 C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\scopedcss\Components\Pages\SubmitTestimonial.razor.rz.scp.css
+C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\haris\Documents\FYP Project\Bayaan Frontend\obj\Debug\net8.0\staticwebassets.build.json.cache
