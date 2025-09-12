@@ -30,8 +30,8 @@ builder.Services.AddAuthentication(AppConstants.AuthScheme)
     })
     .AddGoogle(GoogleDefaults.AuthenticationScheme, googleOptions =>
     {
-        googleOptions.ClientId = "560537331493-5cnvjoafjl3g739rfcjos89fg2l94435.apps.googleusercontent.com";
-        googleOptions.ClientSecret = "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";
+        googleOptions.ClientId = "Your Client ID";
+        googleOptions.ClientSecret = "Your Client Secret";
         googleOptions.AccessDeniedPath = "/access-denied";
         googleOptions.SignInScheme = AppConstants.AuthScheme;
 
