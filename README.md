@@ -2,7 +2,7 @@
 
 **Bayaan** is a modern, digital platform designed to preserve and celebrate Pakistani poetry. Inspired by Rekhta, Bayaan provides an online space where poets and poetry lovers can connect, share, and explore the richness of Urdu literature.  
 
-Built with a **Blazor frontend** and a **SQL-backed n8n-powered backend**, Bayaan is part of my Final Year Project (FYP) to combine technology with cultural heritage.  
+Built with a **Blazor frontend** and a **SQL-backed backend**
 
 ---
 
@@ -28,7 +28,6 @@ Built with a **Blazor frontend** and a **SQL-backed n8n-powered backend**, Bayaa
 - **Frontend:** Blazor (C#)  
 - **Backend:** SQL Server + Stored Procedures  
 - **Architecture:** Layered (DAL, Service Layer, Entities)  
-- **Workflow & Automation:** n8n (for content approval, moderation, automation)  
 - **Authentication:** Google login (claims-based identity)  
 - **APIs:** Custom endpoints for poetry submission & retrieval  
 
